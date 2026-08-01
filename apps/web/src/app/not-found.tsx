@@ -1,30 +1,35 @@
 import Link from "next/link";
 import { Navbar, Footer } from "@/components/landing";
+import { getLocaleFromCookies, getLocaleDir, getTranslations } from "@/i18n/server";
 // apps/web has multiple root layouts (one per route group), so a global
 // not-found renders WITHOUT any of them — it must supply its own document
 // shell + styles, then compose the marketing chrome like the legal pages do.
 import "./globals.css";
 
-export default function NotFound() {
+export default async function NotFound() {
+  const locale = await getLocaleFromCookies();
+  const dir = getLocaleDir(locale);
+  const t = getTranslations(locale);
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale === "fa" ? "fa" : "en"} dir={dir} suppressHydrationWarning>
       <head>
-        <title>Page not found — Openship</title>
+        <title>{t.notFound.title}</title>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className="min-h-screen antialiased">
+      <body className={`min-h-screen antialiased ${locale === "fa" ? "lang-fa" : ""}`}>
         <Navbar />
         <main className="legal-root">
           <section className="legal-hero">
             <div className="legal-container" style={{ textAlign: "center" }}>
               <p className="legal-eyebrow">404</p>
               <h1 className="legal-title">
-                Page not
+                {t.notFound.headline1}
                 <br />
-                <span className="legal-title-soft">found.</span>
+                <span className="legal-title-soft">{t.notFound.headline2}</span>
               </h1>
               <p className="legal-meta" style={{ maxWidth: "460px", margin: "0 auto" }}>
-                The page you&apos;re looking for doesn&apos;t exist or has moved.
+                {t.notFound.description}
               </p>
               <div style={{ marginTop: "32px" }}>
                 <Link
@@ -32,7 +37,7 @@ export default function NotFound() {
                   className="inline-block rounded-full px-6 py-2.5 text-[14px] font-medium transition-all"
                   style={{ background: "var(--th-btn-bg)", color: "var(--th-btn-text)" }}
                 >
-                  Back home
+                  {t.notFound.backHome}
                 </Link>
               </div>
             </div>

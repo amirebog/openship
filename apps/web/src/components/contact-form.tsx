@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { useTranslations } from "@/i18n";
 
 type FieldProps = {
   label: string;
@@ -54,6 +55,7 @@ const textareaStyle: React.CSSProperties = {
 };
 
 export function ContactForm() {
+  const { t } = useTranslations();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -110,10 +112,10 @@ export function ContactForm() {
           ✓
         </div>
         <h2 className="legal-section-title" style={{ marginBottom: 8 }}>
-          Message sent
+          {t.contactForm.successTitle}
         </h2>
         <p className="legal-p" style={{ color: "var(--th-text-body)", margin: "0 0 32px 0" }}>
-          Thanks for reaching out. We&rsquo;ll get back to you shortly.
+          {t.contactForm.successBody}
         </p>
         <button
           type="button"
@@ -137,7 +139,7 @@ export function ContactForm() {
             e.currentTarget.style.background = "transparent";
           }}
         >
-          Send another message
+          {t.contactForm.sendAnother}
         </button>
       </div>
     );
@@ -147,7 +149,7 @@ export function ContactForm() {
     <>
       <style>{`@keyframes scale-in{from{transform:scale(0.8);opacity:0}to{transform:scale(1);opacity:1}}`}</style>
       <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-        <Field label="Name" id="contact-name" required>
+        <Field label={t.contactForm.name} id="contact-name" required>
           <input
             id="contact-name"
             type="text"
@@ -155,7 +157,7 @@ export function ContactForm() {
             onChange={(e) => setName(e.target.value)}
             required
             style={inputStyle}
-            placeholder="Your name"
+            placeholder={t.contactForm.yourName}
             onFocus={(e) => {
               e.currentTarget.style.borderColor = "var(--th-bd-strong)";
               e.currentTarget.style.boxShadow = "0 0 0 3px var(--th-sf-04)";
@@ -167,7 +169,7 @@ export function ContactForm() {
           />
         </Field>
 
-        <Field label="Email" id="contact-email" required>
+        <Field label={t.contactForm.email} id="contact-email" required>
           <input
             id="contact-email"
             type="email"
@@ -175,7 +177,7 @@ export function ContactForm() {
             onChange={(e) => setEmail(e.target.value)}
             required
             style={inputStyle}
-            placeholder="you@example.com"
+            placeholder={t.contactForm.yourEmail}
             onFocus={(e) => {
               e.currentTarget.style.borderColor = "var(--th-bd-strong)";
               e.currentTarget.style.boxShadow = "0 0 0 3px var(--th-sf-04)";
@@ -187,7 +189,7 @@ export function ContactForm() {
           />
         </Field>
 
-        <Field label="Subject" id="contact-subject" required>
+        <Field label={t.contactForm.subject} id="contact-subject" required>
           <input
             id="contact-subject"
             type="text"
@@ -195,7 +197,7 @@ export function ContactForm() {
             onChange={(e) => setSubject(e.target.value)}
             required
             style={inputStyle}
-            placeholder="How can we help?"
+            placeholder={t.contactForm.howCanWeHelp}
             onFocus={(e) => {
               e.currentTarget.style.borderColor = "var(--th-bd-strong)";
               e.currentTarget.style.boxShadow = "0 0 0 3px var(--th-sf-04)";
@@ -206,15 +208,15 @@ export function ContactForm() {
             }}
           />
         </Field>
-
-        <Field label="Message" id="contact-message" required>
+ 
+        <Field label={t.contactForm.message} id="contact-message" required>
           <textarea
             id="contact-message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
             style={textareaStyle}
-            placeholder="Tell us more about your question or issue..."
+            placeholder={t.contactForm.tellUsMore}
             onFocus={(e) => {
               e.currentTarget.style.borderColor = "var(--th-bd-strong)";
               e.currentTarget.style.boxShadow = "0 0 0 3px var(--th-sf-04)";
@@ -258,7 +260,7 @@ export function ContactForm() {
             e.currentTarget.style.boxShadow = "none";
           }}
         >
-          {status === "sending" ? "Sending..." : "Send message"}
+          {status === "sending" ? t.contactForm.sending : t.contactForm.sendMessage}
         </button>
       </form>
     </>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "@/i18n";
 
 const STACKS = [
   { name: 'Next.js',     icon: 'https://cdn.simpleicons.org/nextdotjs/000000' },
@@ -20,8 +21,10 @@ const STACKS = [
 export function Hero() {
   const [copied, setCopied] = useState(false);
 
+  const { t } = useTranslations();
+
   const handleCopy = () => {
-    navigator.clipboard.writeText("npm i -g openship");
+    navigator.clipboard.writeText(t.hero.installCommand);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -47,8 +50,8 @@ export function Hero() {
           className="animate-fade-in-up group mb-7 inline-flex items-center gap-2 font-mono text-[13px] tracking-[0.01em] th-text-muted transition-colors hover:th-text-secondary"
         >
           <span className="opacity-50">$</span>
-          <span>npm i -g openship</span>
-          <span className="ml-0.5 opacity-0 transition-opacity group-hover:opacity-50">
+          <span>{t.hero.installCommand}</span>
+          <span className="ms-0.5 opacity-0 transition-opacity group-hover:opacity-50">
             {copied ? (
               <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -64,16 +67,16 @@ export function Hero() {
         {/* Headline */}
         <h1 className="animate-fade-in-up animate-delay-100">
           <span className="block text-[clamp(2.5rem,5.5vw,4.25rem)] font-medium leading-[1.08] tracking-[-0.02em] th-text-heading">
-            Deploy anything.
+            {t.hero.headline1}
           </span>
           <span className="hero-headline-second block text-[clamp(2.5rem,5.5vw,4.25rem)] font-light italic leading-[1.08] tracking-[-0.015em]">
-            Own everything.
+            {t.hero.headline2}
           </span>
         </h1>
 
         {/* Sub */}
         <p className="animate-fade-in-up animate-delay-200 mx-auto mt-6 max-w-[520px] text-[16px] leading-[1.65] th-text-body">
-          Push your code - builds, config, and deployment are handled automatically. Use our cloud or connect your own servers. Zero&nbsp;lock&#8209;in, completely&nbsp;open&#8209;source.
+          {t.hero.subtitle}
         </p>
 
         {/* CTAs */}
@@ -83,9 +86,9 @@ export function Hero() {
               href="/login"
               className="th-btn group rounded-full px-7 py-3 text-[15px] font-medium"
             >
-              Get started
+              {t.hero.getStarted}
               <svg
-                className="ml-1.5 -mr-1.5 h-4 w-4 transition-transform group-hover:translate-x-0.5"
+                className="ms-1.5 -me-1.5 h-4 w-4 transition-transform group-hover:translate-x-0.5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -98,9 +101,9 @@ export function Hero() {
               href="/docs/getting-started/quickstart"
               className="th-btn-ghost group rounded-full px-7 py-3 text-[15px] font-medium"
             >
-              Self host
+              {t.hero.selfHost}
               <svg
-                className="ml-1.5 -mr-1.5 h-4 w-4 transition-transform group-hover:translate-x-0.5"
+                className="ms-1.5 -me-1.5 h-4 w-4 transition-transform group-hover:translate-x-0.5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -116,7 +119,7 @@ export function Hero() {
       {/* ═══════════════ Stack ticker ═══════════════ */}
       <div className="animate-fade-in-up animate-delay-500 relative z-10 mt-16 w-full max-w-[820px] px-6">
         <p className="mb-6 text-center text-[13px] font-medium uppercase tracking-[0.1em] th-text-muted">
-          Designed for your favorite stack
+          {t.hero.stackLabel}
         </p>
         <div className="hero-ticker-mask overflow-hidden">
           <div className="hero-ticker flex w-max items-center gap-12">

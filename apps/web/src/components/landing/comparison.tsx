@@ -1,4 +1,7 @@
+"use client";
+
 import { Fragment } from "react";
+import { useTranslations } from "@/i18n";
 
 /**
  * Comparison - grouped table, Openship column highlighted with a tinted rail.
@@ -29,7 +32,7 @@ type Cell = { text: string; status: Status };
 type Row = { feature: string; openship: Cell; managed: Cell; selfhost: Cell };
 type Group = { title: string; rows: Row[] };
 
-const GROUPS: Group[] = [
+const DEFAULT_GROUPS: Group[] = [
   {
     title: "Where it runs, and what stays on",
     rows: [
@@ -255,19 +258,37 @@ function StatusMark({ status }: { status: Status }) {
 }
 
 export function Comparison() {
+  const { t } = useTranslations();
+  // Translations may carry the table rows as simple strings (legacy) or as
+  // objects that include `{ text, status }`. Normalize here so the UI can
+  // render either shape without runtime errors.
+  const rawGroups: any[] = t.comparison.groups || [];
+  const groups: Group[] = rawGroups.map((g) => ({
+    title: g.title,
+    rows: (g.rows || []).map((r: any) => ({
+      feature: r.feature,
+      openship:
+        typeof r.openship === "string"
+          ? { text: r.openship, status: "neutral" }
+          : r.openship,
+      managed:
+        typeof r.managed === "string"
+          ? { text: r.managed, status: "neutral" }
+          : r.managed,
+      selfhost:
+        typeof r.selfhost === "string"
+          ? { text: r.selfhost, status: "neutral" }
+          : r.selfhost,
+    })),
+  }));
+
   return (
     <section className="cmp-section">
       <div className="cmp-container">
         <header className="cmp-head">
-          <p className="cmp-eyebrow">Straight comparison</p>
-          <h2 className="cmp-title">
-            Where Openship is<br />genuinely different.
-          </h2>
-          <p className="cmp-sub">
-            Git deploys, TLS, databases, backups, cron &mdash; every tool here has those, so
-            they are not on this list. What is below is where the choice actually changes
-            what you can do, and what it costs you to change your mind.
-          </p>
+          <p className="cmp-eyebrow">{t.comparison.eyebrow}</p>
+          <h2 className="cmp-title whitespace-pre-line">{t.comparison.title}</h2>
+          <p className="cmp-sub">{t.comparison.subtitle}</p>
         </header>
 
         <div className="cmp">
@@ -275,14 +296,14 @@ export function Comparison() {
 
           {/* Header */}
           <div className="cmp-row cmp-row--head">
-            <div className="cmp-cell cmp-cell--feature">Feature</div>
-            <div className="cmp-cell cmp-cell--win">Openship</div>
-            <div className="cmp-cell">Managed (Vercel, Netlify)</div>
-            <div className="cmp-cell">Self-host (Coolify, Dokploy, Dokku)</div>
+            <div className="cmp-cell cmp-cell--feature">{t.comparison.headers.feature}</div>
+            <div className="cmp-cell cmp-cell--win">{t.comparison.headers.openship}</div>
+            <div className="cmp-cell">{t.comparison.headers.managed}</div>
+            <div className="cmp-cell">{t.comparison.headers.selfhost}</div>
           </div>
 
           {/* Body, grouped */}
-          {GROUPS.map((g) => (
+          {groups.map((g) => (
             <Fragment key={g.title}>
               <p className="cmp-group">{g.title}</p>
               {g.rows.map((r) => (

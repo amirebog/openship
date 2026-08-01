@@ -13,6 +13,7 @@ import "fumadocs-ui/style.css";
 import "../../styles/fonts.css";
 // Docs-only tweaks layered after fumadocs' stylesheet (e.g. sidebar cursor).
 import "../../styles/docs-overrides.css";
+import { getLocaleFromCookies, getLocaleDir } from "@/i18n/server";
 
 const SITE_URL = "https://openship.io";
 
@@ -32,17 +33,25 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default function DocsRootLayout({ children }: { children: ReactNode }) {
+export default async function DocsRootLayout({ children }: { children: ReactNode }) {
+  const locale = await getLocaleFromCookies();
+  const dir = getLocaleDir(locale);
+
   return (
     <html
-      lang="en"
+      lang={locale === "fa" ? "fa" : "en"}
+      dir={dir}
       suppressHydrationWarning
-      style={{ "--font-sans": FONT_SANS } as CSSProperties}
+      style={{
+        "--font-sans": locale === "fa"
+          ? "'Vazirmatn', 'Gellix', 'SF Arabic', system-ui, -apple-system, sans-serif"
+          : FONT_SANS,
+      } as CSSProperties}
     >
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className="min-h-screen antialiased" style={{ fontFamily: "var(--font-sans)" }}>
+      <body className={`min-h-screen antialiased ${locale === "fa" ? "lang-fa" : ""}`} style={{ fontFamily: "var(--font-sans)" }}>
         {children}
       </body>
     </html>

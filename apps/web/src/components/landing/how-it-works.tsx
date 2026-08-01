@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * How it works - the deploy mechanism as a five-step flow.
  *
@@ -6,6 +8,8 @@
  * immutable containers, swap with zero downtime, and are drivable from
  * anywhere (CLI / dashboard / desktop / AI agent over MCP).
  */
+
+import { useTranslations } from "@/i18n";
 
 const STEPS = [
   {
@@ -36,25 +40,22 @@ const STEPS = [
 ];
 
 export function HowItWorks() {
+  const { t } = useTranslations();
+
   return (
     <section id="how-it-works" className="hiw-section">
       <div className="hiw-container">
         <header className="hiw-head">
-          <p className="hiw-eyebrow">How it works</p>
-          <h2 className="hiw-title">
-            From git push to live,<br />on your infrastructure.
-          </h2>
-          <p className="hiw-sub">
-            No agent on your servers, no black box. Here&rsquo;s the exact path your
-            code takes — and why your production machines never build.
-          </p>
+          <p className="hiw-eyebrow">{t.howItWorks.eyebrow}</p>
+          <h2 className="hiw-title whitespace-pre-line">{t.howItWorks.title}</h2>
+          <p className="hiw-sub">{t.howItWorks.subtitle}</p>
         </header>
 
         <ol className="hiw-flow">
-          {STEPS.map((s) => (
-            <li key={s.n} className="hiw-step">
+          {t.howItWorks.steps.map((s, index) => (
+            <li key={`${s.title}-${index}`} className="hiw-step">
               <div className="hiw-step-rail">
-                <span className="hiw-step-n">{s.n}</span>
+                <span className="hiw-step-n">{String(index + 1).padStart(2, "0")}</span>
               </div>
               <div className="hiw-step-body">
                 <h3 className="hiw-step-title">{s.title}</h3>

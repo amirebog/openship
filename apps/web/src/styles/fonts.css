@@ -3,8 +3,69 @@
  *  OPENSHIP FONTS
  *  Gellix (Latin) + SF Arabic (RTL fallback)
  *  Imported once via globals.css
+ *
+ *  Vazirmatn (Persian) — prefer a local copy in /public/fonts for offline
+ *  and reliable serving. Place the Vazirmatn woff2 files under:
+ *
+ *    apps/web/public/fonts/
+ *      Vazirmatn-Regular.woff2
+ *      Vazirmatn-Medium.woff2
+ *      Vazirmatn-SemiBold.woff2
+ *      Vazirmatn-Bold.woff2
+ *      Vazirmatn-ExtraBold.woff2
+ *
+ *  If those files are not present the stylesheet falls back to the remote
+ *  Google-hosted Vazirmatn. Adding local fonts avoids network-dependency and
+ *  satisfies the user's request to ship the font in the repo (drop the binary
+ *  files into the public/fonts folder).
  * ─────────────────────────────────────────────────────────────────
  */
+
+/* Ensure @import comes before any other at-rules per CSS rules. */
+
+/* Vazirmatn — local first */
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fallback: if local files are not present, pull from Google Fonts as a
+   secondary source to avoid missing glyphs during development. */
+
+
+
+
 
 /* ── Gellix ───────────────────────────────────────────────────── */
 

@@ -1,0 +1,499 @@
+{
+  "nav": {
+    "features": "Features",
+    "emails": "Emails",
+    "docs": "Docs",
+    "roadmap": "Roadmap",
+    "changelog": "Changelog",
+    "pricing": "Pricing",
+    "github": "GitHub",
+    "login": "Log in",
+    "download": "Download",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "installCommand": "npm i -g openship",
+    "headline1": "Deploy anything.",
+    "headline2": "Own everything.",
+    "subtitle": "Push your code — builds, config, and deployment are handled automatically. Use our cloud or connect your own servers. Zero lock-in, completely open-source.",
+    "getStarted": "Get started",
+    "selfHost": "Self host",
+    "stackLabel": "Designed for your favorite stack"
+  },
+  "footer": {
+    "brandDescription": "Open-source deployment platform. CLI, web dashboard, or desktop app. Install, connect, deploy.",
+    "product": "Product",
+    "developers": "Developers",
+    "company": "Company",
+    "legal": "Legal",
+    "copyright": "© {year} Oblien LLC. All rights reserved.",
+    "an": "An",
+    "project": "project",
+    "github": "GitHub",
+    "x": "X (Twitter)",
+    "discord": "Discord"
+  },
+  "notFound": {
+    "title": "Page not found — Openship",
+    "headline1": "Page not",
+    "headline2": "found.",
+    "description": "The page you're looking for doesn't exist or has moved.",
+    "backHome": "Back home"
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "description": "Get in touch with the Openship team. Send us a message and we'll get back to you as soon as possible.",
+    "heroEyebrow": "Contact Us",
+    "heroHeadline1": "We're here to help.",
+    "heroHeadline2": "Send us a message.",
+    "heroMeta": "Fill out the form below and we'll reply within 24 hours.",
+    "tocTitle": "Contact info",
+    "support": "Support",
+    "githubIssues": "GitHub issues",
+    "security": "Security",
+    "privacy": "Privacy",
+    "legal": "Legal",
+    "docsLink": "documentation",
+    "trustSecurity": "Trust & Security",
+    "installCommand": "install in one command",
+    "footer": "Prefer the docs? Read the {docsLink} or {trustLink}."
+  },
+  "contactForm": {
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "yourName": "Your name",
+    "yourEmail": "you@example.com",
+    "howCanWeHelp": "How can we help?",
+    "tellUsMore": "Tell us more about your question or issue...",
+    "sendMessage": "Send message",
+    "sending": "Sending...",
+    "successTitle": "Message sent",
+    "successBody": "Thanks for reaching out. We'll get back to you shortly.",
+    "sendAnother": "Send another message",
+    "errorDefault": "Something went wrong."
+  },
+  "languageSwitcher": {
+    "label": "Language"
+  },
+  "footerSection": {
+    "product": "Product",
+    "developers": "Developers",
+    "company": "Company",
+    "legal": "Legal",
+    "copyright": "© {year} Oblien LLC. All rights reserved.",
+    "attributionPrefix": "An",
+    "attributionSuffix": "project"
+  },
+  "downloadButton": {
+    "download": "Download",
+    "allPlatforms": "All platforms",
+    "detected": "Detected",
+    "macAppleSilicon": "Mac (Apple Silicon)",
+    "macIntel": "Mac (Intel)",
+    "windows": "Windows",
+    "linux": "Linux",
+    "otherPlatforms": "Other platforms"
+  },
+  "deploymentModels": {
+    "eyebrow": "Where it runs",
+    "title": "Cloud, self-hosted,\nor both.",
+    "subtitle": "Same platform, three deployment shapes - and you can switch any day.",
+    "migrateTag": "Migrate any day",
+    "migrateTitle": "Cloud ⇄ self-hosted.\nOne click, any time.",
+    "migrateBody": "Your apps are plain containers and your services are standard images. Move workloads between Openship Cloud and your own servers without rebuilding, rewriting, or paying an exit tax. Click, confirm, done.",
+    "models": [
+      {
+        "tag": "Managed",
+        "title": "Openship Cloud",
+        "lead": "Sign up, point at a repository, ship. Zero infrastructure decisions. Multi-region by default. Auto-scaling per service.",
+        "points": [
+          "Multi-region edge - us, eu, apac, more",
+          "Auto-scaling, zero-downtime rolling deploys",
+          "Backups, monitoring, alerts included"
+        ],
+        "price": "Coming soon",
+        "priceNote": "Plans announced once billing is live"
+      },
+      {
+        "tag": "Self-hosted",
+        "title": "Your servers",
+        "lead": "Run the entire platform on machines you own. Any Linux box, any provider, any region. Add nodes as you grow.",
+        "points": [
+          "Connect any VPS - Hetzner, DO, AWS, bare metal",
+          "Multi-server fan-out across regions",
+          "No agent or dashboard on your boxes"
+        ],
+        "price": "Free & open-source",
+        "priceNote": "Apache-2.0 — self-host today, no billing"
+      },
+      {
+        "tag": "Hybrid",
+        "title": "Mix and match",
+        "lead": "Cloud for the burst, your servers for sensitive data. One control plane. Move workloads without rebuilding.",
+        "points": [
+          "Apps on your servers, services on the cloud",
+          "Or production locally, previews managed",
+          "One billing, one team, one dashboard"
+        ],
+        "price": "Coming soon",
+        "priceNote": "Available once plans open"
+      }
+    ]
+  },
+  "completePlatform": {
+    "eyebrow": "The full platform",
+    "title": "Forty-two capabilities,\none platform.",
+    "subtitle": "No add-on stores, no plugin marketplaces, no “requires an integration with”…",
+    "groupCountLabel": "capabilities",
+    "groups": [
+      {
+        "heading": "Deploy",
+        "items": [
+          { "name": "Push-to-deploy", "desc": "Every commit builds and ships. Branch environments included." },
+          { "name": "Preview deployments", "desc": "Every pull request gets its own URL. Auto-torn down on merge." },
+          { "name": "Local builds", "desc": "Builds run on your machine. Production servers stay focused." },
+          { "name": "Auto-detected stacks", "desc": "Framework, language, package manager, commands - figured out." },
+          { "name": "Smart fixes", "desc": "Common failures (missing imports, version drift) diagnosed and patched." },
+          { "name": "Instant rollbacks", "desc": "Every deploy is immutable. Revert to any version in one click." }
+        ]
+      },
+      {
+        "heading": "Run",
+        "items": [
+          { "name": "Auto-scaling", "desc": "Horizontal scaling per service. Up on traffic, down when idle." },
+          { "name": "Load balancing", "desc": "Health checks, weighted routing, sticky sessions - built in." },
+          { "name": "Live monitoring", "desc": "CPU, memory, network, disk - real-time charts and alerts." },
+          { "name": "Streaming logs", "desc": "Live tail across services and replicas. Search, filter, persist." },
+          { "name": "Scheduled jobs", "desc": "Cron-like jobs with retries, visibility, per-run logs." },
+          { "name": "Zero-downtime deploys", "desc": "Rolling restarts, blue-green, draining connections - automatic." }
+        ]
+      },
+      {
+        "heading": "Connect",
+        "items": [
+          { "name": "Custom domains", "desc": "Unlimited apex and subdomains. Wildcards supported." },
+          { "name": "Free SSL", "desc": "Let's Encrypt by default. Auto-renewing wildcard certificates." },
+          { "name": "DNS management", "desc": "Visual records and propagation. Verify domains in seconds." },
+          { "name": "Edge routing", "desc": "Global edge, anycast IPs, low-latency routing." },
+          { "name": "Private networking", "desc": "Services talk over an isolated network, no exposed ports." },
+          { "name": "WebSockets", "desc": "First-class support, persistent connections, sticky routing." }
+        ]
+      },
+      {
+        "heading": "Services",
+        "items": [
+          { "name": "PostgreSQL", "desc": "Versions 14–17. Daily backups, PITR, scheduled upgrades." },
+          { "name": "Redis", "desc": "Cache or persistent. Cluster mode. Pub/sub and streams." },
+          { "name": "MongoDB & MySQL", "desc": "Replica sets, sharding, automated upgrades, migration tools." },
+          { "name": "Object storage", "desc": "S3-compatible buckets. Signed URLs, lifecycle rules, replication." },
+          { "name": "Mail server", "desc": "Transactional from your domain. Authentication chain auto-configured." },
+          { "name": "CDN", "desc": "Static asset acceleration. Cache invalidation on deploy." }
+        ]
+      },
+      {
+        "heading": "Manage",
+        "items": [
+          { "name": "CLI", "desc": "A single binary covering deploy, logs, secrets, domains, rollbacks." },
+          { "name": "Web dashboard", "desc": "Visual deploys, metrics, billing, team access." },
+          { "name": "Desktop app", "desc": "Native Mac and Windows. Push from local, stream logs natively." },
+          { "name": "MCP server", "desc": "Drive deploys from AI agents — Claude, Cursor, any MCP client. Standard tools, authenticated." },
+          { "name": "Secrets vault", "desc": "Encrypted at rest. Environment-scoped. Rotated without redeploying." },
+          { "name": "Audit log", "desc": "Every action, exportable, retained for compliance." }
+        ]
+      },
+      {
+        "heading": "Secure",
+        "items": [
+          { "name": "Firewall", "desc": "Default-deny inbound. Per-service policies." },
+          { "name": "Rate limiting", "desc": "Per-route limits, IP or token based. Burst and sustained." },
+          { "name": "Security headers", "desc": "HSTS, CSP, COOP, COEP - production defaults." },
+          { "name": "DDoS protection", "desc": "Edge-level mitigation, automatic challenge." },
+          { "name": "Encryption", "desc": "TLS everywhere, encrypted backups, encrypted secrets." },
+          { "name": "Compliance-ready", "desc": "Logs and config suitable for SOC 2, ISO 27001." }
+        ]
+      },
+      {
+        "heading": "Collaborate",
+        "items": [
+          { "name": "Workspaces", "desc": "Multiple organizations per account — isolated projects, servers, and members. Switch in a click." },
+          { "name": "Team roles", "desc": "Owner, admin, member, and a restricted role. Assigned per teammate." },
+          { "name": "Per-resource access", "desc": "Grant access down to individual projects and resources - not just broad roles." },
+          { "name": "Restricted by default", "desc": "The restricted role starts with zero access. Every permission is explicit - least privilege." },
+          { "name": "Invitations", "desc": "Invite teammates by email. Expiring links, accept flow, per-inviter rate limits." },
+          { "name": "Member audit", "desc": "Every join, role change, and removal recorded and exportable." }
+        ]
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Ready to ship?",
+    "subtitle": "Cloud or a server you own. No lock-in, no configuration files.",
+    "getStarted": "Get started",
+    "viewOnGithub": "View on GitHub",
+    "trustItems": ["CLI, web & desktop", "Cloud or self-hosted", "No lock-in", "Open source"]
+  },
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "title": "From git push to live,\non your infrastructure.",
+    "subtitle": "No agent on your servers, no black box. Here’s the exact path your code takes — and why your production machines never build.",
+    "steps": [
+      { "title": "Connect", "body": "Link a Git repo and pick a target — Openship Cloud or your own server over SSH. Nothing is installed on your box: no agent, no daemon, no dashboard." },
+      { "title": "Build", "body": "On every push the image builds on your machine (or in the cloud), runs your tests, and is tagged as an immutable, versioned artifact. Your production servers stay focused on serving." },
+      { "title": "Ship", "body": "The built image streams to the target over SSH and starts as a fresh container on an isolated private network — no exposed ports, no hand-written Docker or Compose." },
+      { "title": "Route", "body": "Your domains are wired through OpenResty with automatic Let's Encrypt SSL, then traffic swaps to the new container with zero downtime. The previous version stays ready for rollback." },
+      { "title": "Operate", "body": "Stream logs, watch metrics, and roll back to any previous version in one click — from the CLI, the web dashboard, the desktop app, or an AI agent over MCP." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Open source",
+    "headline": "Yours to run, fork,\nand ship.",
+    "body": "The dashboard, the CLI, the agents, the infrastructure adapters - all public, all readable, all auditable. Run it on a Raspberry Pi or a fleet. Contribute back when you want to.",
+    "starOnGithub": "Star on GitHub",
+    "readTheSource": "Read the source",
+    "licenseEyebrow": "Licensed under",
+    "licenseName": "Apache 2.0",
+    "licenseNote": "Permissive licensing. Yours to use, modify, and ship anywhere - including in commercial and closed-source products.",
+    "meta": {
+      "runsOn": "Runs on",
+      "runsOnValue": "Linux, macOS, Windows. ARM and x86. Any cloud or your laptop.",
+      "telemetry": "Telemetry",
+      "telemetryValue": "Off by default. Opt in if you want to help improve the platform.",
+      "lockIn": "Lock-in",
+      "lockInValue": "Plain Docker containers and standard manifests. Leave any day.",
+      "standards": "Standards",
+      "standardsValue": "Docker, OCI, Let's Encrypt, ACME, S3, SMTP."
+    }
+  },
+  "mailServer": {
+    "eyebrow": "Built-in mail server",
+    "title": "Transactional email,\nunlimited domains.",
+    "body": "A real mail server on your own box - not a send-only API. Outbound relays through a trusted provider (Amazon SES or any SMTP) so mail lands with a warmed, high-reputation IP, while every mailbox, message, and byte stays on your server. One click sets up the domains, certificates, and SPF/DKIM/DMARC chain.",
+    "statusLive": "Live · 247 sending",
+    "statusAutoConfigured": "Auto-configured",
+    "ctaGetStarted": "Get started",
+    "ctaSeeMore": "See more",
+    "points": [
+      {
+        "name": "One-click setup.",
+        "desc": "SPF, DKIM, DMARC, reverse DNS - verified and configured for you."
+      },
+      {
+        "name": "Unlimited domains.",
+        "desc": "Add as many sending domains as you need. No add-on, no per-domain pricing."
+      },
+      {
+        "name": "Open SMTP & REST API.",
+        "desc": "Plug straight in from your code. Webhooks for opens, clicks, bounces."
+      }
+    ]
+  },
+  "comparison": {
+    "eyebrow": "Straight comparison",
+    "title": "Where Openship is\ngenuinely different.",
+    "subtitle": "Git deploys, TLS, databases, backups, cron — every tool here has those, so they are not on this list. What is below is where the choice actually changes what you can do, and what it costs you to change your mind.",
+    "headers": {
+      "feature": "Feature",
+      "openship": "Openship",
+      "managed": "Managed (Vercel, Netlify)",
+      "selfhost": "Self-host (Coolify, Dokploy, Dokku)"
+    },
+    "groups": [
+      {
+        "title": "Where it runs, and what stays on",
+        "rows": [
+          {
+            "feature": "Who runs your workload",
+            "openship": "Openship Cloud runs it, or self-host free on machines you own. One tool, one dashboard, and you can move either direction later.",
+            "managed": "They run it, and run it well - but managed-only. There is no version you can host yourself.",
+            "selfhost": "Their cloud hosts only the control panel. You still bring, run and pay for every server."
+          },
+          {
+            "feature": "What has to stay switched on",
+            "openship": "A native Mac, Windows and Linux app. The control plane runs on your machine only while the app is open - no extra box to keep alive just to deploy.",
+            "managed": "No desktop app. Everything runs in their cloud, all the time.",
+            "selfhost": "No desktop app, and a control-plane server that has to stay up around the clock."
+          },
+          {
+            "feature": "Where your source code travels",
+            "openship": "From the desktop app, your folder or repo goes straight to the machine that will run it. Nothing always-on sits in the middle holding your code.",
+            "managed": "Uploaded to their cloud and built there.",
+            "selfhost": "Lands on a long-lived control-plane box first - even when that box is your own."
+          }
+        ]
+      },
+      {
+        "title": "Included, not bolted on",
+        "rows": [
+          {
+            "feature": "Email from your own domain",
+            "openship": "A real mail server, set up for you: mailboxes, webmail, the SPF/DKIM/DMARC chain, and sending through SES or your own SMTP.",
+            "managed": "Not included. Add SendGrid, Resend or Postmark and pay per message.",
+            "selfhost": "No managed mail server - you run the image and wire up the DNS chain yourself."
+          },
+          {
+            "feature": "Traffic rules at the edge",
+            "openship": "Rate limits, country / IP / user-agent blocks and hotlink protection, set per route from the dashboard and applied without a reload.",
+            "managed": "Firewall and rate limiting exist, gated behind higher plans.",
+            "selfhost": "Possible by hand-writing proxy config; no country rules out of the box."
+          },
+          {
+            "feature": "Who is actually hitting your app",
+            "openship": "Per-route traffic, country breakdown and a live request log, built in.",
+            "managed": "Strong analytics dashboards, capped or priced by plan.",
+            "selfhost": "Not included - bolt on Grafana, Plausible or an ELK stack."
+          },
+          {
+            "feature": "Access control and audit",
+            "openship": "Grant access down to a single project, start teammates at zero permissions, and export a record of every change - on every plan.",
+            "managed": "Broad team roles; audit trail and SSO on enterprise plans.",
+            "selfhost": "Broad team roles only, with little or no change history."
+          }
+        ]
+      },
+      {
+        "title": "Fits the setup you already have",
+        "rows": [
+          {
+            "feature": "Servers with things already on them",
+            "openship": "Point it at a server and it picks up the containers already running there. Nothing is rebuilt, nothing is restarted.",
+            "managed": "Nothing to pick up - you redeploy from source.",
+            "selfhost": "Cannot take on an app that is already running; you recreate each one by hand."
+          },
+          {
+            "feature": "The proxy you already run",
+            "openship": "Carries on with your existing Traefik, nginx or Caddy on :80 and :443, and the switch is reversible in one step.",
+            "managed": "Not applicable - their edge, their rules.",
+            "selfhost": "Claims the proxy at install and expects to be the only thing on those ports."
+          },
+          {
+            "feature": "Settings that live in your repo",
+            "openship": "openship.json describes build, env, domains, services and resources - reviewed in a pull request like the rest of your code.",
+            "managed": "vercel.json and netlify.toml do the same thing.",
+            "selfhost": "A Procfile or compose file, but domains, env and resources stay dashboard-only."
+          }
+        ]
+      },
+      {
+        "title": "If you change your mind",
+        "rows": [
+          {
+            "feature": "Moving to a different server",
+            "openship": "Move a running app with its volumes and certificates to another machine, then cut traffic over once it checks out.",
+            "managed": "Not applicable - you do not choose the machine.",
+            "selfhost": "Redeploy on the new box and copy the volumes across by hand."
+          },
+          {
+            "feature": "Leaving Openship",
+            "openship": "On your own servers, removing a project deletes our record and nothing else. Containers, data and config keep serving traffic, and Openship can pick them back up later.",
+            "managed": "Nothing stays behind - the workload only ever existed in their cloud.",
+            "selfhost": "Deleting tears the app down, and none of them can re-adopt a running app afterwards."
+          }
+        ]
+      }
+    ],
+    "foot": "Compared against the shipping versions of each tool, July 2026. A dash means that tool genuinely matches Openship, or that the row does not apply to it. We would rather score a row even than invent a cross."
+  },
+  "pricingPage": {
+    "title": "Pricing",
+    "heroEyebrow": "Pricing",
+    "heroTitle1": "Plans are on pause.",
+    "heroTitle2": "Back as soon as billing is live.",
+    "heroSubtitle": "We're finishing setting up payments. Self-hosted is temporarily unavailable and Openship Cloud is coming soon — leave your email and we'll let you know the moment plans open up.",
+    "trustItems": ["Open source · Apache 2.0", "No lock-in", "Cloud or self-hosted", "Get notified at launch"],
+    "planTags": { "unavailable": "Unavailable", "managed": "Managed", "hybrid": "Hybrid" },
+    "planPriceNotePaused": "Paused while we finish setting up payments",
+    "planLeadPaused": "The self-hosted plan is temporarily unavailable while we sort out billing. It'll be back shortly — leave your email and we'll tell you the moment it opens.",
+    "planCtaNotify": "Notify me",
+    "planPriceComingSoon": "Coming soon",
+    "faqEyebrow": "Questions",
+    "faqTitle": "Answered.",
+    "faq": [
+      {
+        "q": "Why are the plans unavailable right now?",
+        "a": "We're finishing setting up payments and billing. Rather than show plans we can't complete sign-up for yet, we've paused them for the moment. It's temporary — leave your email on the contact page and we'll tell you the instant they open."
+      },
+      {
+        "q": "How much does Openship Cloud cost?",
+        "a": "Cloud pricing hasn't been announced yet, and sign-ups are paused while we finish billing setup. Leave your email on the contact page and we'll let you know before it launches."
+      },
+      {
+        "q": "Can I move between self-hosted and cloud later?",
+        "a": "That's the goal — your containers travel as-is, no rebuild, no rewrites. Once Cloud launches, moving between it and self-hosting will be a one-click change."
+      },
+      {
+        "q": "What's the license?",
+        "a": "Apache 2.0 — a permissive license. Use it, modify it, fork it, and ship it in commercial or closed-source products, no strings attached. Run it in your cloud, on a Raspberry Pi, or in production for a SaaS."
+      },
+      {
+        "q": "Do you store my source code?",
+        "a": "Only what's needed to build. We never store unencrypted secrets, and source is fetched fresh from your repo for each build. Self-hosted keeps everything on your infrastructure by definition."
+      }
+    ],
+    "finalTitle": "Want in when plans open?",
+    "finalSubtitle": "We're finishing billing setup — self-hosted is paused and Cloud is coming soon. Leave your email and you'll be first to know the moment plans go live.",
+    "finalButtonNotify": "Get notified",
+    "finalButtonExplore": "Explore the platform"
+  },
+  "aboutPage": {
+    "title": "About",
+    "heroEyebrow": "About",
+    "heroTitle1": "Deployment you own,",
+    "heroTitle2": "open from top to bottom.",
+    "heroMeta": "Built and maintained by the team at Oblien.",
+    "tocTitle": "On this page",
+    "sections": [
+      {
+        "id": "what",
+        "number": "01",
+        "title": "What we build",
+        "paragraphs": [
+          "Openship is a deployment platform you run yourself. Point it at a repository and it detects your stack, builds it, and ships it to any Linux server you own — with databases, domains, SSL, mail, and backups managed from one place.",
+          "The same platform comes as a CLI, a web dashboard, and a desktop app. Use whichever fits how you work; they all drive the same backend."
+        ]
+      },
+      {
+        "id": "open-source",
+        "number": "02",
+        "title": "Open source",
+        "paragraphs": [
+          "Openship is open-source software under the Apache License 2.0. The dashboard, CLI, agents, and infrastructure adapters are all public and auditable on GitHub.",
+          "Every deployment is a standard Docker container with standard manifests — no proprietary formats, no lock-in. Run it on a Raspberry Pi, a single VPS, or a fleet, and move between providers whenever you like."
+        ]
+      },
+      {
+        "id": "who",
+        "number": "03",
+        "title": "Who's behind it",
+        "paragraphs": [
+          "Openship is built and maintained by the team at Oblien (Oblien LLC), which builds cloud and developer infrastructure. It stays open under Apache 2.0 for everyone who deploys with it.",
+          "Openship Cloud — the managed option — is operated by Oblien, but the platform itself is yours to self-host, forever, at no cost."
+        ]
+      },
+      {
+        "id": "involved",
+        "number": "04",
+        "title": "Get involved",
+        "paragraphs": [
+          "Star or fork the project, open an issue, or send a pull request on GitHub. Bug reports and feature ideas are genuinely welcome — the docs and the platform improve fastest with them.",
+          "New here? Start with the documentation or install in one command."
+        ]
+      }
+    ],
+    "footer": "Want to reach us? Head to Contact."
+  },
+  "privacyPage": {
+    "title": "Privacy",
+    "heroEyebrow": "Privacy",
+    "heroTitle1": "We keep your data",
+    "heroTitle2": "secure and minimal.",
+    "heroSubtitle": "Openship collects only what is necessary to operate the platform, and your source remains on your infrastructure when self-hosted.",
+    "sections": []
+  }
+  ,
+  "termsPage": {
+    "title": "Terms"
+  }
+}

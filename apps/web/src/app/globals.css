@@ -20,6 +20,9 @@
     color: var(--th-text-body);
   }
 
+  .lang-fa {
+    --font-sans: 'Vazirmatn', 'Gellix', 'SF Arabic', system-ui, -apple-system, sans-serif;
+  }
 }
 
 /* Mail landing - dark surface, scoped overrides.

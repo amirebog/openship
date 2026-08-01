@@ -1,31 +1,32 @@
+"use client";
+
 /**
  * Mail server spotlight - editorial copy on the left, dashboard preview on
  * the right. Layout is symmetric: the left column's heading + body + points +
  * stats and the right column's image + status row + CTAs balance to roughly
  * equal heights so the two columns center as a single composition.
  */
+
+import { useTranslations } from "@/i18n";
+
 export function MailServer() {
+  const { t } = useTranslations();
+
   return (
     <section className="ms-section">
       <div className="ms-container">
         <div className="ms-grid">
           {/* Text side */}
           <div className="ms-lead">
-            <p className="ms-eyebrow">Built-in mail server</p>
-            <h2 className="ms-title">
-              Transactional email,<br />
-              <span className="ms-title-soft">unlimited domains.</span>
+            <p className="ms-eyebrow">{t.mailServer.eyebrow}</p>
+            <h2 className="ms-title whitespace-pre-line">
+              {t.mailServer.title}
             </h2>
-            <p className="ms-body">
-              A real mail server on your own box - not a send-only API. Outbound relays through a
-              trusted provider (Amazon SES or any SMTP) so mail lands with a warmed, high-reputation
-              IP, while every mailbox, message, and byte stays on your server. One click sets up the
-              domains, certificates, and SPF/DKIM/DMARC chain.
-            </p>
+            <p className="ms-body">{t.mailServer.body}</p>
 
             <ul className="ms-points">
-              {POINTS.map((p, i) => (
-                <li key={p.name}>
+              {t.mailServer.points.map((p, i) => (
+                <li key={`${p.name}-${i}`}>
                   <span className="ms-point-num">{String(i + 1).padStart(2, '0')}</span>
                   <div className="ms-point-text">
                     <span className="ms-point-name">{p.name}</span>
@@ -46,11 +47,10 @@ export function MailServer() {
                   <span className="ms-shot-dot" />
                   <span className="ms-shot-chrome-live">
                     <span className="ms-shot-chrome-live-dot" />
-                    Live · 247 sending
+                    {t.mailServer.statusLive}
                   </span>
                 </span>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                {/* eslint-disable-next-line @next/next/no-img-element */}                <img
                   src="/email-preview.png"
                   alt="Openship mail dashboard"
                   loading="lazy"
@@ -81,7 +81,7 @@ export function MailServer() {
                     fill="none"
                   />
                 </svg>
-                <span>Auto-configured</span>
+                <span>{t.mailServer.statusAutoConfigured}</span>
               </div>
               <div className="ms-status-pills">
                 <span className="ms-status-pill">SPF</span>
@@ -93,9 +93,9 @@ export function MailServer() {
 
             <div className="ms-cta-row">
               <a href="/login" className="th-btn group rounded-full px-6 py-2.5 text-[14px] font-medium">
-                Get started
+                {t.mailServer.ctaGetStarted}
                 <svg
-                  className="ml-1 -mr-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
+                  className="ms-1 -me-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -105,9 +105,9 @@ export function MailServer() {
                 </svg>
               </a>
               <a href="/mail" className="th-btn-ghost group rounded-full px-6 py-2.5 text-[14px] font-medium">
-                See more
+                {t.mailServer.ctaSeeMore}
                 <svg
-                  className="ml-1 -mr-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
+                  className="ms-1 -me-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

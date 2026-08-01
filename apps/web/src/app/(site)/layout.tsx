@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "../globals.css";
+import { getLocaleFromCookies, getLocaleDir } from "@/i18n/server";
+import type { Locale } from "@/i18n";
 
 const SITE_URL = "https://openship.io";
 const SITE_NAME = "Openship";
@@ -139,31 +141,36 @@ const organizationLd = {
       "@type": "ContactPoint",
       contactType: "customer support",
       email: "hello@openship.io",
-      availableLanguage: ["English"],
+      availableLanguage: ["English", "Persian"],
     },
   ],
 };
 
-const websiteLd = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: SITE_NAME,
-  url: SITE_URL,
-  publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: `${SITE_URL}/docs?q={search_term_string}`,
+function buildWebsiteLd(locale: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: SITE_URL,
+    publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${SITE_URL}/docs?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
     },
-    "query-input": "required name=search_term_string",
-  },
-  inLanguage: "en-US",
-};
+    inLanguage: locale,
+  };
+}
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = await getLocaleFromCookies();
+  const dir = getLocaleDir(locale);
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale === "fa" ? "fa" : "en"} dir={dir} suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link
@@ -178,10 +185,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildWebsiteLd(locale === "fa" ? "fa-IR" : "en-US")) }}
         />
       </head>
-      <body className="min-h-screen antialiased">{children}</body>
+      <body className={`min-h-screen antialiased ${locale === "fa" ? "lang-fa" : ""}`}>
+        {children}
+      </body>
     </html>
   );
 }

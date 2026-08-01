@@ -1,3 +1,5 @@
+"use client";
+
 import {
   GitCommitVertical, Eye, Terminal, Boxes, Wand2, Undo2,
   TrendingUp, Scale, Activity, ScrollText, CalendarClock, RefreshCw,
@@ -9,6 +11,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { DarkSection } from "./dark-section";
+import { useTranslations } from "@/i18n";
 
 /**
  * Complete platform - dark section, alternating with the light Features
@@ -220,22 +223,35 @@ const GROUPS: Group[] = [
 ];
 
 export function CompletePlatform() {
+  const { t } = useTranslations();
+  const translatedGroups = GROUPS.map((group, groupIndex) => {
+    const translated = t.completePlatform.groups[groupIndex];
+    return {
+      ...group,
+      heading: translated?.heading ?? group.heading,
+      items: group.items.map((item, itemIndex) => {
+        const translatedItem = translated?.items?.[itemIndex];
+        return {
+          ...item,
+          name: translatedItem?.name ?? item.name,
+          desc: translatedItem?.desc ?? item.desc,
+        };
+      }),
+    };
+  });
+
   return (
     <section className="cp-outer">
       <DarkSection>
         <div className="cp-container">
           <header className="cp-head">
-            <p className="cp-eyebrow">The full platform</p>
-            <h2 className="cp-title">
-              Forty-two capabilities,<br />one platform.
-            </h2>
-            <p className="cp-sub">
-              No add-on stores, no plugin marketplaces, no &ldquo;requires an integration with&hellip;&rdquo;.
-            </p>
+            <p className="cp-eyebrow">{t.completePlatform.eyebrow}</p>
+            <h2 className="cp-title whitespace-pre-line">{t.completePlatform.title}</h2>
+            <p className="cp-sub">{t.completePlatform.subtitle}</p>
           </header>
 
           <div className="cp-stack">
-            {GROUPS.map((g) => (
+            {translatedGroups.map((g) => (
               <section key={g.n} className="cp-group">
                 <div className="cp-group-rail">
                   <span className="cp-group-n">{g.n}</span>
@@ -256,7 +272,7 @@ export function CompletePlatform() {
 
                   <span className="cp-group-count">
                     <span className="cp-group-count-n">{g.items.length}</span>
-                    <span className="cp-group-count-label">capabilities</span>
+                    <span className="cp-group-count-label">{t.completePlatform.groupCountLabel}</span>
                   </span>
                 </div>
                 <div className="cp-grid">

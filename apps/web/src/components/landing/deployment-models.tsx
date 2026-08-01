@@ -1,7 +1,11 @@
+"use client";
+
 /**
  * Deployment models - three big numbered panels. Middle (Hybrid) is the
  * inverted dark panel for visual rhythm. Big "01/02/03" as type-as-design.
  */
+ 
+import { useTranslations } from "@/i18n";
 
 const MODELS = [
   {
@@ -50,23 +54,23 @@ const MODELS = [
 ];
 
 export function DeploymentModels() {
+  const { t } = useTranslations();
+  type Model = { n: string; tag: string; title: string; lead: string; points: string[]; price: string; priceNote?: string; feature?: boolean };
+  const models: Model[] = (t.deploymentModels.models as unknown as Model[]) || MODELS;
+
   return (
     <section className="dm-section">
       <div className="dm-container">
         <header className="dm-head">
-          <p className="dm-eyebrow">Where it runs</p>
-          <h2 className="dm-title">
-            Cloud, self-hosted,<br />or both.
-          </h2>
-          <p className="dm-sub">
-            Same platform, three deployment shapes - and you can switch any day.
-          </p>
+          <p className="dm-eyebrow">{t.deploymentModels.eyebrow}</p>
+          <h2 className="dm-title whitespace-pre-line">{t.deploymentModels.title}</h2>
+          <p className="dm-sub">{t.deploymentModels.subtitle}</p>
         </header>
 
         <div className="dm-grid">
-          {MODELS.map((m) => (
+          {models.map((m) => (
             <article
-              key={m.n}
+              key={m.title}
               className={`dm-panel ${m.feature ? "dm-panel--feature" : ""}`}
             >
               <div className="dm-panel-top">
@@ -94,19 +98,12 @@ export function DeploymentModels() {
         {/* ── Migration callout ────────────────────────────────────── */}
         <div className="dm-migrate">
           <div className="dm-migrate-left">
-            <span className="dm-migrate-tag">Migrate any day</span>
-            <h3 className="dm-migrate-title">
-              Cloud{" "}
-              <span className="dm-migrate-arrow" aria-hidden="true">⇄</span>
-              {" "}self-hosted.<br />
-              <span className="dm-migrate-soft">One click, any time.</span>
-            </h3>
-          </div>
-          <p className="dm-migrate-body">
-            Your apps are plain containers and your services are standard images.
-            Move workloads between Openship Cloud and your own servers without
-            rebuilding, rewriting, or paying an exit tax. Click, confirm, done.
-          </p>
+              <span className="dm-migrate-tag">{t.deploymentModels.migrateTag}</span>
+              <h3 className="dm-migrate-title whitespace-pre-line">
+                {t.deploymentModels.migrateTitle}
+              </h3>
+            </div>
+            <p className="dm-migrate-body">{t.deploymentModels.migrateBody}</p>
         </div>
       </div>
     </section>
