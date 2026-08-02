@@ -1,4 +1,8 @@
+"use client";
+
 import Link from "next/link";
+import { useTranslations } from "@/i18n";
+
 
 const footerLinks = {
   Product: [
@@ -28,6 +32,8 @@ const footerLinks = {
 };
 
 export function Footer() {
+  const { t } = useTranslations();
+
   return (
     <footer className="border-t border-[var(--th-bd-subtle)]">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20">
@@ -35,16 +41,29 @@ export function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5">
-              <div
-                className="h-7 w-7 shrink-0 rounded-full border-[2px] border-[var(--th-text-heading)]"
-                aria-hidden="true"
-              />
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="shrink-0"
+              >
+                <path
+                  d="M5 5H19L8 19H19"
+                  stroke="currentColor"
+                  strokeWidth="2.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+
               <span className="th-text-heading text-base font-semibold tracking-tight">
-                Openship
+                Zyrix
               </span>
             </Link>
             <p className="th-text-muted mt-4 max-w-xs text-sm leading-relaxed">
-              Open-source deployment platform. CLI, web dashboard, or desktop app. Install, connect, deploy.
+              {t.footer.brandDescription}
             </p>
           </div>
 
@@ -72,12 +91,12 @@ export function Footer() {
         <div className="section-divider mt-12" />
         <div className="mt-8 flex flex-col items-center justify-between gap-6 sm:flex-row">
           <p className="th-text-muted text-sm">
-            &copy; {new Date().getFullYear()} Oblien LLC. All rights reserved.
+            &copy; {new Date().getFullYear()} zyrix LLC. All rights reserved.
           </p>
 
-          {/* Oblien attribution */}
+          {/* Oblien attribution 
           <a
-            href="https://oblien.com"
+            href="https://zyrix.ir"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 th-text-muted transition-colors hover:text-[var(--th-text-strong)]"
@@ -99,7 +118,7 @@ export function Footer() {
               aria-label="Oblien"
             />
             <span className="text-[13px]">project</span>
-          </a>
+          </a> */}
 
           <div className="flex items-center gap-5">
             {/* GitHub */}

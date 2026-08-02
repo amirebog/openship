@@ -15,6 +15,7 @@ import { SettingsSection } from "./SettingsSection";
 /** Each language's own name, in its own script (never translated). */
 const NATIVE: Record<Locale, string> = {
   en: "English",
+  fa: "فارسی",
   ar: "العربية",
   es: "Español",
   fr: "Français",
@@ -28,6 +29,7 @@ const NATIVE: Record<Locale, string> = {
 /** Short glyph for the card's leading tile. */
 const CODE: Record<Locale, string> = {
   en: "EN",
+  fa: "فا",
   ar: "ع",
   es: "ES",
   fr: "FR",

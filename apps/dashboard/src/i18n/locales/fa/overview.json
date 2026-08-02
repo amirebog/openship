@@ -1,0 +1,110 @@
+{
+  "activity": {
+    "title": "فعالیت",
+    "thisWeek": "این هفته",
+    "deploymentSingular": "{count} استقرار",
+    "deploymentPlural": "{count} استقرار"
+  },
+  "apiRequests": {
+    "title": "درخواست‌های API",
+    "last7Days": "۷ روز گذشته",
+    "totalRequests": "مجموع درخواست‌ها",
+    "requestsTooltip": "{count} درخواست"
+  },
+  "credits": {
+    "title": "اعتبار",
+    "availableToUse": "قابل استفاده",
+    "spentThisMonth": "خرج‌شده در این ماه",
+    "add": "افزودن"
+  },
+  "deployments": {
+    "title": "استقرارها",
+    "lastNDays": "{period} روز گذشته",
+    "deploymentSingular": "{count} استقرار",
+    "deploymentPlural": "{count} استقرار"
+  },
+  "homeTip": {
+    "quickTip": "نکته سریع",
+    "connectText": "مستودع GitHub خود را متصل کنید تا با هر push به‌طور خودکار مستقر شود.",
+    "connectLabel": "اتصال به GitHub",
+    "createText": "برای شروع استقرار، اولین پروژه خود را بسازید.",
+    "createLabel": "پروژه جدید",
+    "settingsText": "متغیرهای محیطی و دامنه‌های سفارشی را در تنظیمات پروژه پیکربندی کنید.",
+    "settingsLabel": "تنظیمات پروژه",
+    "connected": "متصل"
+  },
+  "welcome": {
+    "title": "اولین پروژه خود را راه‌اندازی کنید",
+    "subtitle": "یک مستودع متصل کنید یا از یک قالب شروع کنید — Openship آن را می‌سازد، مستقر می‌کند و در چند دقیقه یک لینک زنده در اختیارتان می‌گذارد.",
+    "createProject": "ایجاد پروژه",
+    "importGithub": "درون‌ریزی از GitHub",
+    "tipPrefix": "نکته: برای رفتن به هر جایی",
+    "tipSuffix": "را فشار دهید"
+  },
+  "header": {
+    "goodMorning": "صبح بخیر",
+    "goodAfternoon": "ظهر بخیر",
+    "goodEvening": "عصر بخیر",
+    "greetingWithName": "{greeting}، {name}",
+    "overview": "نمای کلی",
+    "subtitle": "استفاده از پلتفرم خود را رصد کرده و منابع خود را مدیریت کنید",
+    "creditsBalance": "موجودی اعتبار",
+    "topUp": "افزایش موجودی"
+  },
+  "hero": {
+    "title": "فعالیت پلتفرم",
+    "subtitle": "مصرف توکن و درخواست‌های API",
+    "tokens": "توکن‌ها",
+    "requests": "درخواست‌ها",
+    "lastNDays": "{period} روز گذشته",
+    "agents": "عامل‌ها",
+    "environments": "محیط‌ها",
+    "total": "مجموع",
+    "production": "تولید",
+    "testing": "آزمایش",
+    "prodCount": "{count} تولید",
+    "testCount": "{count} آزمایش"
+  },
+  "projects": {
+    "title": "پروژه‌ها",
+    "activeDeployments": "استقرارهای فعال",
+    "total": "مجموع",
+    "live": "زنده",
+    "building": "در حال ساخت",
+    "needAttentionSingular": "{count} پروژه نیاز به توجه دارد",
+    "needAttentionPlural": "{count} پروژه نیاز به توجه دارند"
+  },
+  "sandboxes": {
+    "title": "محیط‌های ایزوله",
+    "developmentEnvironments": "محیط‌های توسعه",
+    "totalSandboxes": "مجموع محیط‌های ایزوله",
+    "active": "فعال",
+    "runningCount": "{count} در حال اجرا",
+    "stoppedCount": "{count} متوقف‌شده"
+  },
+  "stats": {
+    "creditsBalance": "موجودی اعتبار",
+    "tokenUsage": "مصرف توکن",
+    "thisMonth": "این ماه",
+    "apiRequests": "درخواست‌های API",
+    "last7Days": "۷ روز گذشته",
+    "deployments": "استقرارها",
+    "successfulCount": "{count} موفق",
+    "activeProjects": "پروژه‌های فعال",
+    "sandboxes": "محیط‌های ایزوله",
+    "activeCount": "{count} فعال"
+  },
+  "tokenUsage": {
+    "title": "مصرف توکن",
+    "lastNDays": "{period} روز گذشته",
+    "tokensTooltip": "{count} توکن"
+  },
+  "updates": {
+    "title": "به‌روزرسانی‌های موجود",
+    "updateAction": "به‌روزرسانی",
+    "updating": "در حال به‌روزرسانی…",
+    "newVersion": "نسخه جدید",
+    "started": "در حال به‌روزرسانی {name}…",
+    "failed": "شروع به‌روزرسانی ممکن نشد. لطفاً دوباره تلاش کنید."
+  }
+}

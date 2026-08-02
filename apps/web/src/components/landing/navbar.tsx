@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useTranslations } from "@/i18n";
 import { LanguageSwitcher } from "./language-switcher";
 
-const GITHUB_URL = "https://github.com/oblien/openship";
+const GITHUB_URL = "https://github.com/amirebog";
 
 export function Navbar() {
   const { t } = useTranslations();
@@ -13,12 +13,9 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const NAV_ITEMS = [
-    { label: t.nav.features, href: "/features" },
     { label: t.nav.emails, href: "/mail" },
     { label: t.nav.docs, href: "/docs" },
-    { label: t.nav.roadmap, href: "/roadmap" },
     { label: t.nav.changelog, href: "/changelog" },
-    { label: t.nav.pricing, href: "/pricing" },
   ];
 
   const handleScroll = useCallback(() => {
@@ -60,7 +57,7 @@ export function Navbar() {
               transition: "color .3s",
             }}
           >
-            Openship
+            zyrix
           </span>
         </Link>
 

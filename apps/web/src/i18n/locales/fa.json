@@ -509,5 +509,16 @@
   },
   "termsPage": {
     "title": "قوانین"
+  },
+    "finalCta": {
+    "title": "آماده ارسال؟",
+    "subtitle": "فضای ابری یا سروری که مالک آن هستید. بدون وابستگی انحصاری (Lock-in) و بدون فایل‌های پیکربندی.",
+    "getStarted": "شروع کنید",
+    "viewOnGithub": "مشاهده در گیت‌هاب",
+    "trustItems": ["CLI, web & desktop", "ابری یا میزبانی‌شده به‌صورت شخصی (Self-hosted)", "بدون وابستگی انحصاری", "متن‌باز"]
+},
+  "downloadpage": {
+    "title": "نصب Zyrix"
   }
+
 }

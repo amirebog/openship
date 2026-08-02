@@ -1,30 +1,38 @@
+"use client";
+
 import { DarkSection } from "./dark-section";
+import { useTranslations } from "@/i18n";
 
 export function FinalCta() {
+  const { t } = useTranslations();
+
   return (
     <section className="fcta-outer">
       <DarkSection>
         <div className="fcta-container">
           <h2 className="fcta-title">
-            Ready to ship?
+            {t.finalCta.title}
           </h2>
+
           <p className="fcta-sub">
-            Cloud or a server you own.<br />
-            No lock-in, no configuration files.
+            {t.finalCta.subtitle}
           </p>
+
           <div className="fcta-row">
             <a href="/login" className="fcta-btn fcta-btn--primary">
-              Get started
+              {t.finalCta.getStarted}
             </a>
+
             <a
               href="https://github.com/oblien/openship"
               target="_blank"
               rel="noreferrer"
               className="fcta-btn fcta-btn--ghost"
             >
-              View on GitHub
+              {t.finalCta.viewOnGithub}
             </a>
           </div>
+
           <ul className="fcta-trust">
             <li>CLI, web &amp; desktop</li>
             <li>Cloud or self-hosted</li>

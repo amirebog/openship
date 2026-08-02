@@ -1,0 +1,171 @@
+{
+  "ghCliConsent": {
+    "title": "مستودع‌های شما خوانده شود؟",
+    "body": "OpenShip می‌تواند با استفاده از gh CLI که از قبل با آن وارد شده‌اید، مستودع‌های GitHub شما را فهرست کند.",
+    "bodyWithLogin": "OpenShip می‌تواند با استفاده از gh CLI که با @{login} وارد شده، مستودع‌های GitHub شما را فهرست کند.",
+    "pointNoCloud": "چیزی به فضای ابری ارسال نمی‌شود — این فهرست هرگز از این دستگاه خارج نمی‌شود.",
+    "pointDesktopOnly": "فقط در برنامه دسکتاپ کار می‌کند، با استفاده از احراز هویت محلی gh شما.",
+    "pointReadOnly": "فقط خواندنی: مستودع‌ها را فهرست می‌کند تا یکی را برای استقرار انتخاب کنید.",
+    "allow": "اجازه دادن"
+  },
+  "page": {
+    "title": "پروژه جدید",
+    "subtitle": "یک مستودع وارد کنید، یک لینک بچسبانید، یا از یک قالب شروع کنید",
+    "tabs": {
+      "folder": "پوشه",
+      "github": "GitHub",
+      "url": "لینک Git",
+      "template": "قالب"
+    }
+  },
+  "connect": {
+    "connectGithub": "اتصال به GitHub",
+    "manageInSettings": "مدیریت از تنظیمات",
+    "terminal": {
+      "title": "اتصال به GitHub",
+      "checkConnection": "بررسی اتصال",
+      "afterLogin": "پس از ورود، برای ادامه روی «بررسی اتصال» کلیک کنید."
+    },
+    "deviceFlow": {
+      "title": "این کد را در GitHub وارد کنید",
+      "goToPrefix": "به",
+      "goToSuffix": "بروید و کد بالا را وارد کنید.",
+      "waiting": "در انتظار تأیید مجوز…"
+    },
+    "default": {
+      "title": "برای استقرار به GitHub متصل شوید",
+      "descSelfHosted": "انتخاب کنید Openship چگونه به مستودع‌های شما دسترسی پیدا کند.",
+      "descSaas": "حساب GitHub خود را متصل کنید تا مستودع‌ها را مرور کرده و با هر push مستقر کنید.",
+      "recommended": "توصیه‌شده",
+      "cloudApp": "برنامه ابری Openship",
+      "cloudAppDesc": "با توکن‌های کوتاه‌مدت روی سرورهای راه دور مستقر شوید.",
+      "connectCloud": "اتصال به Openship Cloud",
+      "localBuilds": "ساخت‌های محلی",
+      "ghCli": "با gh CLI وارد شوید",
+      "ghCliDesc": "از ورود GitHub روی دستگاه خودتان استفاده کنید. نیازی به فضای ابری نیست.",
+      "useGhCli": "استفاده از gh CLI",
+      "connecting": "در حال اتصال…"
+    }
+  },
+  "folderUpload": {
+    "emptyFolder": "به نظر می‌رسد این پوشه خالی است (یا همه‌چیز نادیده گرفته شده). یک پوشه پروژه انتخاب کنید.",
+    "uploadError": "بارگذاری پوشه ناموفق بود",
+    "stackTitle": "می‌خواهید چه چیزی را مستقر کنید؟",
+    "stackDesc": "پشته فناوری پوشه خود را انتخاب کنید — این محیط ساخت را تعیین می‌کند. سپس آن را بارگذاری خواهید کرد.",
+    "backToStack": "بازگشت به انتخاب پشته",
+    "uploadTitle": "پوشه {stack} خود را بارگذاری کنید",
+    "uploadSubtitle": "در مرورگر شما بسته‌بندی می‌شود — node_modules، .git و خروجی‌های ساخت نادیده گرفته می‌شوند",
+    "dropTitle": "پوشه پروژه‌تان را رها کنید یا برای مرور کلیک کنید",
+    "dropSubtitle": "کل پوشه بارگذاری و به‌عنوان برنامه {stack} ساخته می‌شود",
+    "filesSingular": "یک فایل",
+    "filesPlural": "{count} فایل",
+    "clearSelection": "پاک کردن انتخاب",
+    "packing": "در حال بسته‌بندی پوشه…",
+    "uploading": "در حال بارگذاری…",
+    "continue": "ادامه"
+  },
+  "localProjects": {
+    "title": "پروژه‌های محلی",
+    "loading": "در حال بارگذاری...",
+    "projectCountSingular": "یک پروژه",
+    "projectCountPlural": "{count} پروژه",
+    "import": "درون‌ریزی",
+    "empty": {
+      "title": "هنوز پروژه محلی‌ای وجود ندارد",
+      "description": "یک پوشه پروژه از دستگاه خود درون‌ریزی کنید تا به‌صورت محلی بررسی، ساخته و مستقر شود",
+      "importProject": "درون‌ریزی پروژه",
+      "howItWorks": "نحوه کار",
+      "dropTitle": "رها کنید یا مرور کنید",
+      "dropDesc": "هر پوشه پروژه‌ای را انتخاب کنید",
+      "autoDetectTitle": "شناسایی خودکار",
+      "autoDetectDesc": "فریمورک و تنظیمات یافت شد",
+      "deployTitle": "استقرار محلی",
+      "deployDesc": "روی دستگاه خودتان بسازید و اجرا کنید"
+    },
+    "form": {
+      "title": "درون‌ریزی از پوشه",
+      "scanErrorDefault": "اسکن پوشه ناموفق بود",
+      "dropTitle": "یک پوشه را اینجا رها کنید یا برای مرور کلیک کنید",
+      "dropSubtitle": "پوشه پروژه خود را برای شناسایی خودکار فریمورک انتخاب کنید",
+      "folderViaBrowser": "پوشه از طریق مرورگر انتخاب شد - لطفاً مسیر مطلق کامل را وارد کرده و روی اسکن کلیک کنید",
+      "folderDropped": "پوشه رها شد - لطفاً مسیر مطلق کامل را وارد کرده و روی اسکن کلیک کنید",
+      "pathPlaceholder": "/path/to/your/project",
+      "browse": "مرور",
+      "scan": "اسکن",
+      "importError": "درون‌ریزی پروژه ناموفق بود",
+      "projectName": "نام پروژه",
+      "detected": "شناسایی شد",
+      "build": "ساخت:",
+      "install": "نصب:",
+      "output": "خروجی:",
+      "start": "اجرا:",
+      "importing": "در حال درون‌ریزی...",
+      "importProject": "درون‌ریزی پروژه"
+    }
+  },
+  "repositoryList": {
+    "searchPlaceholder": "جست‌وجو در مستودع‌ها...",
+    "visibility": {
+      "all": "همه",
+      "public": "عمومی",
+      "private": "خصوصی"
+    },
+    "sort": {
+      "recent": "اخیرترین",
+      "name": "نام",
+      "stars": "ستاره‌ها"
+    },
+    "addAccount": "افزودن حساب GitHub",
+    "installTitle": "نصب برنامه GitHub",
+    "installDesc": "برنامه GitHub را روی حساب یا سازمان خود نصب کنید تا دسترسی به مستودع‌هایتان اعطا شود.",
+    "installButton": "نصب برنامه GitHub",
+    "noMatching": "هیچ مستودع مطابقی وجود ندارد",
+    "noRepos": "هیچ مستودعی یافت نشد",
+    "noMatchingDesc": "عبارت جست‌وجوی دیگری را امتحان کنید یا فیلترها را تغییر دهید",
+    "noReposDesc": "این حساب هنوز هیچ مستودعی ندارد",
+    "privateBadge": "خصوصی",
+    "localOnly": "فقط محلی",
+    "localOnlyTooltip": "برنامه Openship روی {owner} نصب نشده است. فقط ساخت‌های محلی — برای فعال‌سازی استقرار از راه دور، برنامه را روی این مالک نصب کنید.",
+    "repoCountSingular": "یک مستودع",
+    "repoCountPlural": "{count} مستودع",
+    "matching": "مطابق با «{query}»",
+    "pagination": {
+      "previous": "قبلی",
+      "next": "بعدی",
+      "pageOf": "صفحه {page} از {total}"
+    },
+    "time": {
+      "justNow": "هم‌اکنون",
+      "minutesAgo": "{n} دقیقه پیش",
+      "hoursAgo": "{n} ساعت پیش",
+      "daysAgo": "{n} روز پیش",
+      "monthsAgo": "{n} ماه پیش"
+    }
+  },
+  "sidebar": {
+    "overview": "نمای کلی",
+    "total": "مجموع",
+    "public": "عمومی",
+    "private": "خصوصی",
+    "quickTip": "نکته سریع",
+    "quickTipDesc": "هر مستودعی را برای استقرار فوری انتخاب کنید. استقرارهای خودکار را با هر push تنظیم کنید.",
+    "connection": "اتصال",
+    "openshipGithubApp": "برنامه Openship در GitHub",
+    "connected": "متصل",
+    "notConnected": "متصل نیست",
+    "ghCli": "gh CLI",
+    "runGhAuth": "دستور `gh auth login` را اجرا کنید",
+    "openshipCloudApp": "برنامه ابری Openship",
+    "checking": "در حال بررسی…",
+    "notConnectedManage": "متصل نیست — مدیریت از تنظیمات",
+    "optional": "اختیاری",
+    "footnote": "gh CLI کتابخانه را به‌صورت محلی اجرا می‌کند. برای استقرار از راه دور، برنامه ابری Openship توکن‌های کوتاه‌مدت صادر می‌کند —",
+    "manageGithubSettings": "مدیریت GitHub از تنظیمات"
+  },
+  "urlImport": {
+    "invalidUrl": "یک لینک معتبر مستودع GitHub وارد کنید",
+    "title": "درون‌ریزی از لینک Git",
+    "description": "لینک یک مستودع عمومی را برای درون‌ریزی بچسبانید. نیازی به اتصال GitHub نیست.",
+    "importButton": "درون‌ریزی مستودع"
+  }
+}

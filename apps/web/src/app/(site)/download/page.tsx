@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslations } from "@/i18n";
 import { useEffect, useState } from "react";
 import { usePlatform, type Platform } from "@/hooks/use-platform";
 import { Navbar, Footer } from "@/components/landing";
@@ -57,16 +58,16 @@ const CLI_OPTIONS = [
 ];
 
 const STEPS = [
-  { num: "01", title: "Install", desc: "One command in any package manager. Bun runtime, no daemons or agents." },
-  { num: "02", title: "Run",     desc: "openship up starts Openship locally (API + dashboard), or openship install for the desktop app." },
-  { num: "03", title: "Ship",    desc: "openship init links your project, then openship deploy. TLS, DNS, databases, edge - done." },
+  { num: "01", title: "Install", desc: "تنها یک دستور در هر مدیر بسته‌ای. محیط اجرای Bun؛ بدون هیچ‌گونه دیمون یا ایجنتی." },
+  { num: "02", title: "Run",     desc: "دستور `zyrix up` برنامه zyrix را به‌صورت محلی (شامل API و داشبورد) راه‌اندازی می‌کند، و دستور `zyrix install` برای نصب اپلیکیشن دسکتاپ به کار می‌رود." },
+  { num: "03", title: "Ship",    desc: "دستور `zyrix init` پروژه شما را متصل می‌کند و سپس `zyrix deploy` اجرا می‌شود. TLS، DNS، پایگاه‌های داده و Edge؛ همه آماده و برقرار می‌شوند." },
 ];
 
 const MODES = [
   {
     label: "CLI",
     tag: "Terminal",
-    desc: "Install once, deploy from any shell. Stream logs, roll back, manage domains - without leaving your editor.",
+    desc: "یک‌بار نصب کنید و از هر پوسته‌ای (shell) مستقر (deploy) کنید. بدون ترک محیط ویرایشگر، لاگ‌ها را مشاهده کنید، به نسخه‌های قبلی بازگردید و دامنه‌ها را مدیریت کنید.",
     icon: (
       <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
@@ -76,7 +77,7 @@ const MODES = [
   {
     label: "Web Dashboard",
     tag: "Self-hosted",
-    desc: "Bring up the full dashboard on your own box. Team access, CI/CD, monitoring, audit logs.",
+    desc: "داشبورد کامل را روی سیستم خودتان بالا بیاورید. شامل دسترسی تیمی، CI/CD، پایش (Monitoring) و لاگ‌های حسابرسی (Audit logs).",
     icon: (
       <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6h16.5M3.75 12h16.5M3.75 18h16.5" />
@@ -86,7 +87,7 @@ const MODES = [
   {
     label: "Desktop App",
     tag: "Native",
-    desc: "macOS, Windows, Linux. Connect servers, deploy, monitor - visual workflows in a single window.",
+    desc: "macOS، ویندوز، لینوکس. اتصال سرورها، استقرار و پایش؛ گردش‌کارهای بصری در یک پنجره واحد.",
     icon: (
       <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25A2.25 2.25 0 015.25 3h13.5A2.25 2.25 0 0121 5.25z" />
@@ -96,6 +97,7 @@ const MODES = [
 ];
 
 export default function DownloadPage() {
+   const { t } = useTranslations();
   const { platform: detected } = usePlatform();
   const [downloading, setDownloading] = useState<Platform | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
@@ -201,17 +203,16 @@ export default function DownloadPage() {
           {/* Two-line headline */}
           <h1 className="animate-fade-in-up animate-delay-100">
             <span className="block text-[clamp(2.5rem,5.5vw,4.25rem)] font-medium leading-[1.08] tracking-[-0.02em] th-text-heading">
-              Install Openship.
+              نصب Zyrix
             </span>
             <span className="hero-headline-second block text-[clamp(2.5rem,5.5vw,4.25rem)] font-light italic leading-[1.08] tracking-[-0.015em]">
-              Deploy in seconds.
+              در عرض چند ثانیه مستقر کنید
             </span>
           </h1>
 
           {/* Sub */}
           <p className="animate-fade-in-up animate-delay-200 mx-auto mt-6 max-w-[540px] text-[16px] leading-[1.65] th-text-body">
-            Your machine, your servers, your stack. The CLI, the dashboard, and the desktop
-            app - all open&#8209;source, all yours to run.
+ماشین شما، سرورهای شما، پشته (stack) شما. رابط خط فرمان (CLI)، داشبورد و اپلیکیشن دسکتاپ؛ همگی متن‌باز و آماده اجرا توسط شما.
           </p>
 
           {/* CTAs */}
@@ -224,7 +225,7 @@ export default function DownloadPage() {
                 <svg className="-ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                 </svg>
-                Download for {recommendedDl.title}
+                دانلود برای {recommendedDl.title}
                 <svg className="ml-1.5 -mr-1.5 h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -238,7 +239,7 @@ export default function DownloadPage() {
                 <svg className="-ml-0.5 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
                 </svg>
-                View on GitHub
+                مشاهده در گیت‌هاب
               </a>
             </div>
             <p className="text-[12px] th-text-muted">
@@ -269,7 +270,7 @@ export default function DownloadPage() {
             />
           </div>
           <p className="mt-5 text-center text-[13px]" style={{ color: "var(--th-text-muted)" }}>
-            The full dashboard, in a native window - deploys, logs, metrics, and services.
+            داشبرد کامل در یک پنجره بومی (Native)؛ شامل استقرارها، لاگ‌ها، معیارها و سرویس‌ها.
           </p>
         </section>
 
@@ -290,8 +291,8 @@ export default function DownloadPage() {
                 </span>
               </h2>
               <p className="mt-5 max-w-md text-[16px] leading-[1.65]" style={{ color: "var(--th-text-body)" }}>
-                Install globally and you&rsquo;re ready. Same binary on every OS.
-                No daemons. No background services. No mystery.
+آن را به‌صورت سراسری (Global) نصب کنید و کار تمام است؛ همان فایل اجرایی برای تمام سیستم‌عامل‌ها.
+                بدون دیمون (Daemon). بدون سرویس‌های پس‌زمینه. بدون هیچ‌گونه ابهام یا پیچیدگی پنهان.
               </p>
               <Link
                 href="/docs/cli"
@@ -423,8 +424,7 @@ export default function DownloadPage() {
               </span>
             </h2>
             <p className="mx-auto mt-5 max-w-md text-[16px] leading-[1.6]" style={{ color: "var(--th-text-body)" }}>
-              Same Openship in a polished desktop window. Auto-updates across every
-              platform, ready out of the box.
+همان zyrix، اما در قالب یک پنجره دسکتاپ بهینه‌شده. به‌روزرسانی خودکار در تمامی پلتفرم‌ها و آماده‌به‌کار بلافاصله پس از نصب.
             </p>
           </div>
 
@@ -717,7 +717,7 @@ export default function DownloadPage() {
               Ready in 60 seconds.
             </h2>
             <p className="mx-auto mt-5 max-w-md text-[16px] leading-[1.6]" style={{ color: "var(--th-text-body)" }}>
-              Install the CLI and ship your first deploy. Free, open-source, Apache 2.0.
+             CLI را نصب کنید و اولین استقرار (Deploy) خود را انجام دهید. رایگان، متن‌باز و تحت مجوز Apache 2.0.
             </p>
             <div className="mt-9 flex flex-wrap items-center justify-center gap-3.5">
               <button
@@ -725,7 +725,7 @@ export default function DownloadPage() {
                 className="th-btn group rounded-full px-7 py-3 text-[15px] font-medium"
               >
                 <span className="font-mono opacity-60">$</span>
-                npm i -g openship
+                npm i -g zyrix
                 <span className="ml-1.5 text-[11px] uppercase tracking-[0.08em] opacity-50">
                   {copied === "npm i -g openship" ? "copied" : "copy"}
                 </span>

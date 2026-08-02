@@ -1,0 +1,144 @@
+{
+  "time": {
+    "secondsAgo": "{n} ثانیه پیش",
+    "minutesAgo": "{n} دقیقه پیش",
+    "hoursAgo": "{n} ساعت پیش",
+    "daysAgo": "{n} روز پیش",
+    "monthsAgo": "{n} ماه پیش",
+    "yearsAgo": "{n} سال پیش"
+  },
+  "header": {
+    "title": "انتشارها",
+    "loading": "در حال بارگذاری…",
+    "countProjectOne": "{count} انتشار",
+    "countProjectOther": "{count} انتشار",
+    "countAllOne": "{deployments} در مجموع در {projects} پروژه",
+    "countAllOther": "{deployments} در مجموع در {projects} پروژه"
+  },
+  "filters": {
+    "searchPlaceholder": "جستجو در انتشارها...",
+    "all": "همه",
+    "success": "موفق",
+    "failed": "ناموفق",
+    "building": "در حال ساخت",
+    "canceled": "لغو شده"
+  },
+  "projectFilter": {
+    "allProjects": "همه پروژه‌ها"
+  },
+  "sidebar": {
+    "overview": {
+      "title": "نمای کلی",
+      "total": "مجموع",
+      "successful": "موفق",
+      "failed": "ناموفق",
+      "inProgress": "در حال انجام"
+    },
+    "autoDeploy": {
+      "title": "انتشار خودکار",
+      "description": "انتشار خودکار را فعال کنید تا با هر Push به شاخه اصلی، انتشارها به‌صورت خودکار اجرا شوند.",
+      "cta": "رفتن به تنظیمات پروژه"
+    },
+    "getStarted": {
+      "title": "شروع کنید",
+      "description": "یک مخزن Git وارد کنید یا از یک قالب برای ساخت اولین انتشار خود استفاده کنید.",
+      "cta": "انتشار پروژه"
+    },
+    "recent": {
+      "title": "آخرین‌ها",
+      "empty": "انتشارهای شما اینجا نمایش داده می‌شوند",
+      "unknown": "نامشخص"
+    }
+  },
+  "stats": {
+    "total": "مجموع",
+    "projectCountOne": "{count} پروژه",
+    "projectCountOther": "{count} پروژه",
+    "success": "موفق",
+    "failed": "ناموفق",
+    "inProgress": "در حال انجام",
+    "buildingNow": "اکنون در حال ساخت"
+  },
+  "status": {
+    "deployed": "منتشر شده",
+    "failed": "ناموفق",
+    "canceled": "لغو شده",
+    "building": "در حال ساخت",
+    "deploying": "در حال انتشار",
+    "partial": "جزئی",
+    "actionRequired": "نیاز به اقدام",
+    "rejected": "رد شده",
+    "verifying": "در حال بررسی",
+    "pending": "در انتظار"
+  },
+  "serviceStatus": {
+    "deployed": "منتشر شده",
+    "failed": "ناموفق",
+    "cancelled": "لغو شده",
+    "skipped": "رد شده",
+    "building": "در حال ساخت",
+    "deploying": "در حال انتشار",
+    "running": "در حال اجرا",
+    "removedOnHost": "از میزبان حذف شده",
+    "verifying": "در حال بررسی",
+    "pending": "در انتظار"
+  },
+  "card": {
+    "unknownProject": "پروژه ناشناخته",
+    "versionTitle": "نسخه {version}",
+    "active": "فعال",
+    "activeTitle": "این انتشار اکنون پروژه را سرو می‌کند",
+    "pinned": "سنجاق‌شده",
+    "pinnedTitle": "سنجاق‌شده — از پاک‌سازی نگهداری معاف است. برای بازگشت نامحدود قابل بازیابی باقی می‌ماند.",
+    "snapshotted": "ذخیره‌شده",
+    "snapshottedTitle": "نسخه ذخیره شده است — این نسخه برای بازگشت در دسترس است",
+    "manualDeploy": "انتشار دستی",
+    "serviceTitle": "{name}: {label}",
+    "serviceTitleReason": "{name}: {label} ({reason})"
+  },
+  "empty": {
+    "filtered": {
+      "title": "انتشاری پیدا نشد",
+      "description": "فیلترها را تغییر دهید یا جستجو را پاک کنید."
+    },
+    "none": {
+      "title": "هنوز هیچ انتشاری وجود ندارد",
+      "description": "اولین پروژه خود را منتشر کنید تا وضعیت ساخت، جزئیات Commit و معیارهای عملکرد اینجا نمایش داده شوند.",
+      "deployButton": "انتشار پروژه",
+      "browseButton": "مشاهده قالب‌ها"
+    }
+  },
+  "modal": {
+    "title": "جزئیات Commit",
+    "project": "پروژه",
+    "unknownProject": "پروژه ناشناخته",
+    "domain": "دامنه",
+    "noDomain": "بدون دامنه",
+    "status": "وضعیت",
+    "environment": "محیط",
+    "statusName": {
+      "success": "موفق",
+      "failed": "ناموفق",
+      "building": "در حال ساخت",
+      "deploying": "در حال انتشار",
+      "canceled": "لغو شده",
+      "pending": "در انتظار"
+    },
+    "changedFiles": "فایل‌های تغییر یافته ({count})",
+    "fileTypes": {
+      "added": "+ اضافه شده",
+      "modified": "~ تغییر یافته",
+      "removed": "- حذف شده"
+    },
+    "viewOnGithub": "مشاهده در GitHub",
+    "visitSite": "بازدید از سایت",
+    "manual": {
+      "title": "انتشار دستی",
+      "description": "این انتشار به‌صورت دستی اجرا شده و اطلاعات Commit ندارد.",
+      "deploymentId": "شناسه انتشار",
+      "created": "تاریخ ایجاد",
+      "type": "نوع",
+      "typeManual": "دستی"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+name: openship-dev
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: openship-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: openship
+      POSTGRES_PASSWORD: openship123456
+      POSTGRES_DB: openship
+    ports:
+      - "5432:5432"
+    volumes:
+      - openship_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U openship -d openship"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    container_name: openship-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - openship_redis_data:/data
+    command:
+      - redis-server
+      - --appendonly
+      - yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  openship_postgres_data:
+  openship_redis_data:

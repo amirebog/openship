@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Navbar, Footer } from "@/components/landing";
 import { FEATURES, CATEGORY_ORDER, CATEGORY_BLURB } from "./_data";
-import "../roadmap/roadmap.css";
+
 import "./features.css";
 
 const PAGE_TITLE = "Features";

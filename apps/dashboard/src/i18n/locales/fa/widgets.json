@@ -1,0 +1,304 @@
+{
+  "shared": {
+    "dnsRecords": {
+      "priority": "اولویت {n}",
+      "recommended": "توصیه‌شده",
+      "name": "نام",
+      "value": "مقدار",
+      "copy": "کپی"
+    },
+    "errorState": {
+      "commonCauses": "دلایل رایج",
+      "needHelp": "به کمک نیاز دارید؟",
+      "needHelpDesc": "مستندات را بررسی کنید یا اگر مشکل ادامه داشت با ما تماس بگیرید.",
+      "documentation": "مستندات",
+      "repoNotFound": {
+        "title": "مستودع یافت نشد",
+        "subtitle": "نتوانستیم مستودعی که به دنبال آن هستید را پیدا کنیم.",
+        "hints": [
+          "مستودع خصوصی است و به شما دسترسی داده نشده",
+          "نام مستودع یا مالک آن اشتباه نوشته شده",
+          "مستودع حذف یا منتقل شده است",
+          "اتصال شما به GitHub منقضی شده است"
+        ],
+        "backToLibrary": "بازگشت به کتابخانه",
+        "importRepository": "درون‌ریزی مستودع"
+      },
+      "projectNotFound": {
+        "title": "پروژه یافت نشد",
+        "subtitle": "پروژه‌ای که به دنبال آن هستید وجود ندارد یا حذف شده است.",
+        "hints": [
+          "پروژه حذف شده است",
+          "شما به این پروژه دسترسی ندارید",
+          "لینک پروژه نادرست است"
+        ],
+        "backToDashboard": "بازگشت به داشبورد",
+        "createNewProject": "ایجاد پروژه جدید"
+      },
+      "loadFailed": {
+        "title": "بارگذاری این پروژه ممکن نشد",
+        "subtitle": "در دسترسی به این پروژه مشکلی رخ داد. اتصال خود را بررسی کرده و دوباره تلاش کنید."
+      },
+      "accessDenied": {
+        "title": "دسترسی رد شد",
+        "subtitle": "شما مجوز دسترسی به این منبع را ندارید.",
+        "hints": [
+          "شما مالک پروژه نیستید",
+          "حساب شما مجوزهای لازم را ندارد",
+          "عضویت شما در تیم تغییر کرده است"
+        ],
+        "backToDashboard": "بازگشت به داشبورد"
+      }
+    },
+    "machineSettings": {
+      "title": "تنظیمات دستگاه",
+      "configureFor": "پیکربندی منابع محاسباتی برای",
+      "docs": "مستندات",
+      "cpu": "پردازنده",
+      "memory": "حافظه",
+      "storage": "ذخیره‌سازی",
+      "base": "پایه",
+      "current": "فعلی",
+      "creditsPerMonth": "اعتبار/ماه",
+      "fromCurrent": "از فعلی",
+      "viewPricing": "مشاهده قیمت‌گذاری",
+      "cancel": "لغو",
+      "saving": "در حال ذخیره...",
+      "saveChanges": "ذخیره تغییرات",
+      "toastUpdated": "تنظیمات دستگاه به‌روزرسانی شد",
+      "toastFailed": "به‌روزرسانی تنظیمات ناموفق بود"
+    },
+    "serverSelector": {
+      "serverLabel": "سرور",
+      "loadingServers": "در حال بارگذاری سرورها…",
+      "noServerConnected": "هیچ سروری متصل نیست",
+      "connectServerFirst": "ابتدا یک سرور متصل کنید، سپس برای ادامه راه‌اندازی بازگردید.",
+      "addServer": "افزودن سرور",
+      "selectServer": "یک سرور انتخاب کنید…",
+      "addNewServer": "افزودن سرور جدید…"
+    }
+  },
+  "backup": {
+    "runCard": {
+      "streamError": "پخش زنده پیشرفت اجرا ممکن نشد: {message}",
+      "loading": "در حال بارگذاری…",
+      "live": "زنده",
+      "started": "شروع شد",
+      "finished": "پایان یافت",
+      "elapsed": "زمان سپری‌شده",
+      "bytes": "بایت‌ها",
+      "runId": "شناسه اجرا",
+      "status": {
+        "queued": "در صف",
+        "preparing": "در حال آماده‌سازی",
+        "snapshotting": "در حال گرفتن اسنپ‌شات",
+        "uploading": "در حال بارگذاری",
+        "verifying": "در حال تأیید",
+        "succeeded": "موفق",
+        "failed": "ناموفق",
+        "cancelled": "لغوشده",
+        "serverError": "خطای سرور"
+      },
+      "phase": {
+        "queued": "در انتظار یک کارگر…",
+        "preparing": "در حال تعیین مقصد و سرویس…",
+        "snapshotting": "در حال تولید فایل‌ها (اجرای هوک پیش از عملیات)…",
+        "uploading": "در حال پخش به مقصد…",
+        "verifying": "در حال نوشتن مانیفست…"
+      }
+    },
+    "policyEditor": {
+      "presetHourly": "هر ساعت",
+      "presetDaily": "روزانه (۰۳:۱۷)",
+      "presetWeekly": "هفتگی (یکشنبه ۰۳:۱۷)",
+      "presetMonthly": "ماهانه (اول ماه ۰۳:۱۷)",
+      "presetManual": "فقط دستی",
+      "selectDestinationAlert": "یک مقصد انتخاب کنید",
+      "failedSave": "ذخیره سیاست ناموفق بود",
+      "rotateConfirm": "توکن وب‌هوک چرخانده شود؟ لینک فعلی از کار خواهد افتاد.",
+      "failedRotate": "چرخاندن توکن ناموفق بود",
+      "editTitle": "ویرایش سیاست پشتیبان‌گیری",
+      "createTitle": "ایجاد سیاست پشتیبان‌گیری",
+      "serviceLabel": "سرویس: {name}",
+      "projectLevel": "سیاست سطح پروژه",
+      "destination": "مقصد",
+      "selectOption": "— انتخاب —",
+      "schedule": "زمان‌بندی",
+      "cronPlaceholder": "cron سفارشی (۵ فیلد)، یا برای اجرای فقط دستی خالی بگذارید",
+      "retainCount": "تعداد نگه‌داری",
+      "retainCountHint": "نگه‌داری آخرین N اجرای موفق",
+      "retainDays": "روزهای نگه‌داری",
+      "retainDaysHint": "حذف اجراهای قدیمی‌تر از N روز",
+      "preDeployTrigger": "محرک پیش از استقرار",
+      "preDeployLabel": "پشتیبان‌گیری خودکار پیش از فعال‌شدن هر استقرار جدید",
+      "preDeployHint": "در هر ساخت موفق، درست پیش از این‌که کد جدید فعال شود، اجرا می‌شود.",
+      "webhookTrigger": "محرک وب‌هوک",
+      "webhookLabel": "فعال‌سازی لینک وب‌هوک ورودی",
+      "webhookHint": "برای هر سیاست یک توکن ایجاد می‌کند. یک POST به لینک از هر محرک خارجی (GitHub Actions، پایش یا زمان‌بند خودتان) ارسال کنید.",
+      "copyUrl": "کپی لینک",
+      "rotateToken": "چرخاندن توکن",
+      "preHook": "هوک پیش از عملیات (پیش از اسنپ‌شات اجرا می‌شود)",
+      "preHookHint": "برای پایگاه‌های داده رایج است: pg_dump > /tmp/dump.sql. شکست باعث توقف اجرا می‌شود.",
+      "postHook": "هوک پس از عملیات (پس از بارگذاری اجرا می‌شود)",
+      "postHookHint": "پاک‌سازی؛ شکست ثبت می‌شود اما اجرا را ناموفق نمی‌کند.",
+      "policyEnabled": "سیاست فعال است",
+      "cancel": "لغو",
+      "saving": "در حال ذخیره…",
+      "saveChanges": "ذخیره تغییرات",
+      "createPolicy": "ایجاد سیاست"
+    }
+  },
+  "cloud": {
+    "connectionGate": {
+      "reconnect": "اتصال مجدد به Openship Cloud",
+      "deployedOn": "این پروژه روی Openship Cloud مستقر شده است",
+      "sessionMissing": "جلسه Openship Cloud شما مفقود است. برای مدیریت استقرارها، مشاهده گزارش‌ها و دسترسی به کنترل‌های زمان اجرای {name} متصل شوید.",
+      "thisProject": "این پروژه",
+      "connecting": "در حال اتصال…",
+      "connect": "اتصال به Openship Cloud",
+      "readOnlyNote": "همچنان می‌توانید این صفحه را به‌صورت فقط خواندنی در حین قطع اتصال مرور کنید."
+    }
+  },
+  "integrations": {
+    "githubPermission": {
+      "title": "اتصال به GitHub",
+      "subtitle": "سطح دسترسی به مستودع‌ها را انتخاب کنید",
+      "intro": "انتخاب کنید Openship به کدام مستودع‌ها دسترسی داشته باشد. بعداً می‌توانید این را در تنظیمات GitHub خود تغییر دهید.",
+      "publicTitle": "فقط مستودع‌های عمومی",
+      "publicDesc": "دسترسی به مستودع‌های عمومی شما. ایده‌آل برای پروژه‌های متن‌باز.",
+      "publicItem1": "خواندن داده مستودع‌های عمومی",
+      "publicItem2": "استقرار مستودع‌های عمومی",
+      "publicItem3": "ایجاد وب‌هوک برای مستودع‌های عمومی",
+      "allTitle": "مستودع‌های عمومی و خصوصی",
+      "allDesc": "دسترسی کامل به تمام مستودع‌های شما. برای پروژه‌های خصوصی لازم است.",
+      "allItem1": "خواندن داده مستودع‌های عمومی و خصوصی",
+      "allItem2": "استقرار هر مستودعی",
+      "allItem3": "ایجاد وب‌هوک برای همه مستودع‌ها",
+      "allItem4": "دسترسی به مستودع‌های سازمان",
+      "noteLabel": "توجه:",
+      "noteText": "هر زمان می‌توانید دسترسی را از تنظیمات GitHub، بخش Applications → Authorized OAuth Apps لغو کنید.",
+      "cancel": "لغو",
+      "connecting": "در حال اتصال...",
+      "connect": "اتصال به GitHub"
+    }
+  },
+  "permissions": {
+    "resourcePicker": {
+      "failedLoadResources": "بارگذاری منابع ناموفق بود",
+      "searchPlaceholder": "جست‌وجو در {type}...",
+      "allResources": "همه {type}",
+      "noMatch": "هیچ منبعی با جست‌وجوی شما مطابقت ندارد.",
+      "noResourcesYet": "هنوز هیچ {type} در این سازمان وجود ندارد.",
+      "selectedSummaryOne": "{count} منبع در همه انواع انتخاب شد.",
+      "selectedSummaryOther": "{count} منبع در همه انواع انتخاب شد.",
+      "wildcard": "کاراکتر جایگزین",
+      "coveredByAll": "توسط «همه» پوشش داده شده",
+      "failedLoadOrgs": "بارگذاری سازمان‌های GitHub ناموفق بود",
+      "failedLoadRepos": "بارگذاری مستودع‌های {login} ناموفق بود",
+      "noOrgs": "هیچ سازمان GitHub متصلی وجود ندارد.",
+      "collapse": "بستن",
+      "expand": "باز کردن",
+      "entireOrg": "کل سازمان",
+      "repoCountOne": "{count} مستودع",
+      "repoCountOther": "{count} مستودع",
+      "coveredByOrg": "توسط اعطای کامل سازمان در بالا پوشش داده شده.",
+      "noRepos": "هیچ مستودعی وجود ندارد.",
+      "searchRepos": "جست‌وجو در مستودع‌ها…"
+    }
+  },
+  "routing": {
+    "domainSwitcher": {
+      "notConfigured": "پیکربندی نشده",
+      "selectDomain": "یک دامنه انتخاب کنید"
+    },
+    "publicEndpoints": {
+      "mappedToPort": "به پورت {port} نگاشت شده است.",
+      "noPortYet": "هنوز پورتی انتخاب نشده است.",
+      "mappedTo": "به {path} نگاشت شده است.",
+      "exposedPort": "پورت افشا‌شده",
+      "staticPath": "مسیر ایستا",
+      "auto": "خودکار",
+      "domain": "دامنه",
+      "domainsRouted": "{count} دامنه به این برنامه هدایت می‌شود.",
+      "accessibleWhere": "سایت شما کجا در دسترس خواهد بود",
+      "addDomain": "افزودن دامنه",
+      "primaryDomain": "دامنه اصلی",
+      "domainN": "دامنه {n}",
+      "remove": "حذف"
+    },
+    "configEditor": {
+      "remove": "حذف",
+      "removeHeader": "حذف هدر",
+      "add": "افزودن",
+      "addHeader": "افزودن هدر",
+      "rewrites": "بازنویسی‌ها",
+      "rewritesHint": "بدون تغییر لینک، مسیر/بک‌اند دیگری را ارائه دهید (مثل ‎/api/(.*) → backend).",
+      "redirects": "تغییر مسیرها",
+      "redirectsHint": "تغییر مسیر HTTP (301/308 دائمی، در غیر این صورت 307).",
+      "headers": "هدرها",
+      "headersHint": "هدرهای پاسخ اضافه‌شده برای مسیرهای منطبق.",
+      "permanent": "دائمی",
+      "cleanUrls": "لینک‌های تمیز",
+      "cleanUrlsHint": "(حذف ‎.html)",
+      "trailingSlash": "اسلش انتهایی"
+    },
+    "settingsCard": {
+      "recordLabels": {
+        "CNAME": "ترافیک را از طریق شبکه edge هدایت می‌کند",
+        "A": "به آدرس IP سرور شما اشاره می‌کند",
+        "TXT": "مالکیت دامنه را تأیید می‌کند"
+      },
+      "publiclyExposed": "افشا‌شده به‌صورت عمومی",
+      "internalOnly": "فقط داخلی",
+      "freeSubdomain": "زیردامنه رایگان",
+      "free": "رایگان",
+      "customDomain": "دامنه سفارشی",
+      "custom": "سفارشی",
+      "save": "ذخیره",
+      "checkingDns": "در حال بررسی DNS…",
+      "addRecordHint": "رکورد {primary} و {txt} را اضافه کنید",
+      "viewRecords": "مشاهده رکوردها",
+      "redirectTo": "تغییر مسیر",
+      "redirectServeApp": "ارائه برنامه اینجا",
+      "redirectToHost": "به {hostname}",
+      "redirectPermanent": "301 دائمی",
+      "redirectTemporary": "302 موقت",
+      "exposedPort": "پورت افشا‌شده",
+      "staticPath": "مسیر ایستا",
+      "staticPathHint": "فایل‌ها را از این زیرپوشه درون خروجی ساخت ارائه دهید. برای خروجی ریشه، از {path} استفاده کنید.",
+      "dnsConfiguration": "پیکربندی DNS",
+      "addRecordsFor": "این رکوردها را برای {hostname} اضافه کنید",
+      "nameHost": "نام / میزبان",
+      "valueTarget": "مقدار / هدف",
+      "dnsHintSelfhosted": "یک رکورد A که به آدرس IP سرورتان اشاره می‌کند اضافه کنید، سپس یک رکورد TXT برای تأیید.",
+      "dnsHintCloud": "یک رکورد CNAME برای هدایت اضافه کنید، سپس یک رکورد TXT برای تأیید.",
+      "dnsPropagation": "تغییرات DNS ممکن است تا ۴۸ ساعت طول بکشد."
+    }
+  },
+  "updates": {
+    "severity": {
+      "critical": "حیاتی",
+      "recommended": "توصیه‌شده",
+      "info": "اطلاعاتی"
+    },
+    "viewChangelog": "مشاهده سابقه تغییرات",
+    "available": "موجود است",
+    "youreOn": "· شما روی {version} هستید",
+    "rerunInstall": "برای به‌روزرسانی سرور با میزبانی شخصی خود، نصب‌کننده را دوباره اجرا کنید.",
+    "updateNow": "همین حالا به‌روزرسانی کن",
+    "downloading": "در حال دانلود Openship {version}",
+    "installing": "در حال نصب — Openship دوباره راه‌اندازی خواهد شد",
+    "updateFailed": "به‌روزرسانی ناموفق بود",
+    "retry": "تلاش مجدد",
+    "changelog": "سابقه تغییرات",
+    "updatedTo": "به Openship {version} به‌روزرسانی شد",
+    "seeChanges": "آنچه در این نسخه تغییر کرده را ببینید.",
+    "onLatest": "شما روی آخرین نسخه هستید.",
+    "whatsNew": "چه چیز جدیدی است",
+    "whatsNewIn": "چه چیز جدیدی در {version} است",
+    "close": "بستن",
+    "noNotes": "برای این نسخه یادداشتی وجود ندارد.",
+    "viewOnGithub": "مشاهده در GitHub",
+    "dismiss": "نادیده گرفتن"
+  }
+}
