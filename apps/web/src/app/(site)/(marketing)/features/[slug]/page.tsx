@@ -5,7 +5,6 @@ import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import { Navbar, Footer } from "@/components/landing";
 import { FEATURES, getFeature, relatedFeatures } from "../_data";
 import { FeatureShot } from "../_components/FeatureShot";
-import "../../roadmap/roadmap.css";
 import "../features.css";
 
 type Params = Promise<{ slug: string }>;
