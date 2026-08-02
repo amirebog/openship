@@ -4,7 +4,7 @@ import { getLocaleFromCookies, getLocaleDir } from "@/i18n/server";
 import type { Locale } from "@/i18n";
 
 const SITE_URL = "https://zyrix.ir";
-const SITE_NAME = "Openship";
+const SITE_NAME = "zyrix";
 const TITLE_DEFAULT = "zyrix - Open Source, Self-Hostable Deployment Platform";
 const TITLE_TEMPLATE = "%s - zyrix";
 const DESCRIPTION =
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Openship - Deploy Anything. Own Everything.",
+    title: "zyrix - Deploy Anything. Own Everything.",
     description:
       "Open source, self-hostable deployment platform with AI-powered builds and instant rollbacks.",
     creator: "@zyrix",
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     canonical: "/",
     types: {
       "application/rss+xml": [
-        { url: "/resources/rss.xml", title: "Openship Resources" },
+        { url: "/resources/rss.xml", title: "zyrix Resources" },
       ],
     },
   },
