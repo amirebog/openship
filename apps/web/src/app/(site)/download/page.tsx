@@ -721,13 +721,13 @@ export default function DownloadPage() {
             </p>
             <div className="mt-9 flex flex-wrap items-center justify-center gap-3.5">
               <button
-                onClick={() => handleCopy("npm i -g openship")}
+                onClick={() => handleCopy("npm i -g zyrix")}
                 className="th-btn group rounded-full px-7 py-3 text-[15px] font-medium"
               >
                 <span className="font-mono opacity-60">$</span>
                 npm i -g zyrix
                 <span className="ml-1.5 text-[11px] uppercase tracking-[0.08em] opacity-50">
-                  {copied === "npm i -g openship" ? "copied" : "copy"}
+                  {copied === "npm i -g zyrix" ? "copied" : "copy"}
                 </span>
               </button>
               <Link href="/docs" className="th-btn-ghost group rounded-full px-7 py-3 text-[15px] font-medium">

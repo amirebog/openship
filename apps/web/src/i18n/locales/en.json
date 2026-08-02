@@ -13,7 +13,7 @@
     "closeMenu": "Close menu"
   },
   "hero": {
-    "installCommand": "npm i -g openship",
+    "installCommand": "npm i -g zyrix",
     "headline1": "Deploy anything.",
     "headline2": "Own everything.",
     "subtitle": "Push your code — builds, config, and deployment are handled automatically. Use our cloud or connect your own servers. Zero lock-in, completely open-source.",
@@ -27,7 +27,7 @@
     "developers": "Developers",
     "company": "Company",
     "legal": "Legal",
-    "copyright": "© {year} Oblien LLC. All rights reserved.",
+    "copyright": "© {year} zyrix LLC. All rights reserved.",
     "an": "An",
     "project": "project",
     "github": "GitHub",
@@ -35,7 +35,7 @@
     "discord": "Discord"
   },
   "notFound": {
-    "title": "Page not found — Openship",
+    "title": "Page not found — zyrix",
     "headline1": "Page not",
     "headline2": "found.",
     "description": "The page you're looking for doesn't exist or has moved.",
@@ -43,7 +43,7 @@
   },
   "contactPage": {
     "title": "Contact Us",
-    "description": "Get in touch with the Openship team. Send us a message and we'll get back to you as soon as possible.",
+    "description": "Get in touch with the zyrix team. Send us a message and we'll get back to you as soon as possible.",
     "heroEyebrow": "Contact Us",
     "heroHeadline1": "We're here to help.",
     "heroHeadline2": "Send us a message.",
@@ -103,11 +103,11 @@
     "subtitle": "Same platform, three deployment shapes - and you can switch any day.",
     "migrateTag": "Migrate any day",
     "migrateTitle": "Cloud ⇄ self-hosted.\nOne click, any time.",
-    "migrateBody": "Your apps are plain containers and your services are standard images. Move workloads between Openship Cloud and your own servers without rebuilding, rewriting, or paying an exit tax. Click, confirm, done.",
+    "migrateBody": "Your apps are plain containers and your services are standard images. Move workloads between zyrix Cloud and your own servers without rebuilding, rewriting, or paying an exit tax. Click, confirm, done.",
     "models": [
       {
         "tag": "Managed",
-        "title": "Openship Cloud",
+        "title": "zyrix Cloud",
         "lead": "Sign up, point at a repository, ship. Zero infrastructure decisions. Multi-region by default. Auto-scaling per service.",
         "points": [
           "Multi-region edge - us, eu, apac, more",
@@ -240,7 +240,7 @@
     "title": "From git push to live,\non your infrastructure.",
     "subtitle": "No agent on your servers, no black box. Here’s the exact path your code takes — and why your production machines never build.",
     "steps": [
-      { "title": "Connect", "body": "Link a Git repo and pick a target — Openship Cloud or your own server over SSH. Nothing is installed on your box: no agent, no daemon, no dashboard." },
+      { "title": "Connect", "body": "Link a Git repo and pick a target — zyrix Cloud or your own server over SSH. Nothing is installed on your box: no agent, no daemon, no dashboard." },
       { "title": "Build", "body": "On every push the image builds on your machine (or in the cloud), runs your tests, and is tagged as an immutable, versioned artifact. Your production servers stay focused on serving." },
       { "title": "Ship", "body": "The built image streams to the target over SSH and starts as a fresh container on an isolated private network — no exposed ports, no hand-written Docker or Compose." },
       { "title": "Route", "body": "Your domains are wired through OpenResty with automatic Let's Encrypt SSL, then traffic swaps to the new container with zero downtime. The previous version stays ready for rollback." },
@@ -292,11 +292,11 @@
   },
   "comparison": {
     "eyebrow": "Straight comparison",
-    "title": "Where Openship is\ngenuinely different.",
+    "title": "Where zyrix is\ngenuinely different.",
     "subtitle": "Git deploys, TLS, databases, backups, cron — every tool here has those, so they are not on this list. What is below is where the choice actually changes what you can do, and what it costs you to change your mind.",
     "headers": {
       "feature": "Feature",
-      "openship": "Openship",
+      "openship": "zyrix",
       "managed": "Managed (Vercel, Netlify)",
       "selfhost": "Self-host (Coolify, Dokploy, Dokku)"
     },
@@ -306,7 +306,7 @@
         "rows": [
           {
             "feature": "Who runs your workload",
-            "openship": "Openship Cloud runs it, or self-host free on machines you own. One tool, one dashboard, and you can move either direction later.",
+            "openship": "zyrix Cloud runs it, or self-host free on machines you own. One tool, one dashboard, and you can move either direction later.",
             "managed": "They run it, and run it well - but managed-only. There is no version you can host yourself.",
             "selfhost": "Their cloud hosts only the control panel. You still bring, run and pay for every server."
           },
@@ -370,7 +370,7 @@
           },
           {
             "feature": "Settings that live in your repo",
-            "openship": "openship.json describes build, env, domains, services and resources - reviewed in a pull request like the rest of your code.",
+            "openship": "zyrix.json describes build, env, domains, services and resources - reviewed in a pull request like the rest of your code.",
             "managed": "vercel.json and netlify.toml do the same thing.",
             "selfhost": "A Procfile or compose file, but domains, env and resources stay dashboard-only."
           }
@@ -386,22 +386,22 @@
             "selfhost": "Redeploy on the new box and copy the volumes across by hand."
           },
           {
-            "feature": "Leaving Openship",
-            "openship": "On your own servers, removing a project deletes our record and nothing else. Containers, data and config keep serving traffic, and Openship can pick them back up later.",
+            "feature": "Leaving zyrix",
+            "openship": "On your own servers, removing a project deletes our record and nothing else. Containers, data and config keep serving traffic, and zyrix can pick them back up later.",
             "managed": "Nothing stays behind - the workload only ever existed in their cloud.",
             "selfhost": "Deleting tears the app down, and none of them can re-adopt a running app afterwards."
           }
         ]
       }
     ],
-    "foot": "Compared against the shipping versions of each tool, July 2026. A dash means that tool genuinely matches Openship, or that the row does not apply to it. We would rather score a row even than invent a cross."
+    "foot": "Compared against the shipping versions of each tool, July 2026. A dash means that tool genuinely matches zyrix, or that the row does not apply to it. We would rather score a row even than invent a cross."
   },
   "pricingPage": {
     "title": "Pricing",
     "heroEyebrow": "Pricing",
     "heroTitle1": "Plans are on pause.",
     "heroTitle2": "Back as soon as billing is live.",
-    "heroSubtitle": "We're finishing setting up payments. Self-hosted is temporarily unavailable and Openship Cloud is coming soon — leave your email and we'll let you know the moment plans open up.",
+    "heroSubtitle": "We're finishing setting up payments. Self-hosted is temporarily unavailable and zyrix Cloud is coming soon — leave your email and we'll let you know the moment plans open up.",
     "trustItems": ["Open source · Apache 2.0", "No lock-in", "Cloud or self-hosted", "Get notified at launch"],
     "planTags": { "unavailable": "Unavailable", "managed": "Managed", "hybrid": "Hybrid" },
     "planPriceNotePaused": "Paused while we finish setting up payments",
@@ -416,7 +416,7 @@
         "a": "We're finishing setting up payments and billing. Rather than show plans we can't complete sign-up for yet, we've paused them for the moment. It's temporary — leave your email on the contact page and we'll tell you the instant they open."
       },
       {
-        "q": "How much does Openship Cloud cost?",
+        "q": "How much does zyrix Cloud cost?",
         "a": "Cloud pricing hasn't been announced yet, and sign-ups are paused while we finish billing setup. Leave your email on the contact page and we'll let you know before it launches."
       },
       {
@@ -442,7 +442,7 @@
     "heroEyebrow": "About",
     "heroTitle1": "Deployment you own,",
     "heroTitle2": "open from top to bottom.",
-    "heroMeta": "Built and maintained by the team at Oblien.",
+    "heroMeta": "Built and maintained by the team at zyrix.",
     "tocTitle": "On this page",
     "sections": [
       {
@@ -450,7 +450,7 @@
         "number": "01",
         "title": "What we build",
         "paragraphs": [
-          "Openship is a deployment platform you run yourself. Point it at a repository and it detects your stack, builds it, and ships it to any Linux server you own — with databases, domains, SSL, mail, and backups managed from one place.",
+          "zyrix is a deployment platform you run yourself. Point it at a repository and it detects your stack, builds it, and ships it to any Linux server you own — with databases, domains, SSL, mail, and backups managed from one place.",
           "The same platform comes as a CLI, a web dashboard, and a desktop app. Use whichever fits how you work; they all drive the same backend."
         ]
       },
@@ -459,7 +459,7 @@
         "number": "02",
         "title": "Open source",
         "paragraphs": [
-          "Openship is open-source software under the Apache License 2.0. The dashboard, CLI, agents, and infrastructure adapters are all public and auditable on GitHub.",
+          "zyrix is open-source software under the Apache License 2.0. The dashboard, CLI, agents, and infrastructure adapters are all public and auditable on GitHub.",
           "Every deployment is a standard Docker container with standard manifests — no proprietary formats, no lock-in. Run it on a Raspberry Pi, a single VPS, or a fleet, and move between providers whenever you like."
         ]
       },
@@ -468,8 +468,8 @@
         "number": "03",
         "title": "Who's behind it",
         "paragraphs": [
-          "Openship is built and maintained by the team at Oblien (Oblien LLC), which builds cloud and developer infrastructure. It stays open under Apache 2.0 for everyone who deploys with it.",
-          "Openship Cloud — the managed option — is operated by Oblien, but the platform itself is yours to self-host, forever, at no cost."
+          "zyrix is built and maintained by the team at zyrix (zyrix LLC), which builds cloud and developer infrastructure. It stays open under Apache 2.0 for everyone who deploys with it.",
+          "zyrix Cloud — the managed option — is operated by zyrix, but the platform itself is yours to self-host, forever, at no cost."
         ]
       },
       {
@@ -489,7 +489,7 @@
     "heroEyebrow": "Privacy",
     "heroTitle1": "We keep your data",
     "heroTitle2": "secure and minimal.",
-    "heroSubtitle": "Openship collects only what is necessary to operate the platform, and your source remains on your infrastructure when self-hosted.",
+    "heroSubtitle": "zyrix collects only what is necessary to operate the platform, and your source remains on your infrastructure when self-hosted.",
     "sections": []
   }
   ,
