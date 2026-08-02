@@ -3,10 +3,10 @@ import "../globals.css";
 import { getLocaleFromCookies, getLocaleDir } from "@/i18n/server";
 import type { Locale } from "@/i18n";
 
-const SITE_URL = "https://openship.io";
+const SITE_URL = "https://zyrix.ir";
 const SITE_NAME = "Openship";
-const TITLE_DEFAULT = "Openship - Open Source, Self-Hostable Deployment Platform";
-const TITLE_TEMPLATE = "%s - Openship";
+const TITLE_DEFAULT = "zyrix - Open Source, Self-Hostable Deployment Platform";
+const TITLE_TEMPLATE = "%s - zyrix";
 const DESCRIPTION =
   "Deploy anything, own everything. Self-hostable, AI-powered deployment platform with free SSL, unlimited domains, instant rollbacks, and CLI/MCP support. Open source and free forever.";
 
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: SITE_NAME, url: SITE_URL }],
   creator: SITE_NAME,
-  publisher: "Oblien LLC",
+  publisher: "zyrix LLC",
   formatDetection: {
     email: false,
     address: false,
@@ -78,8 +78,8 @@ export const metadata: Metadata = {
     title: "Openship - Deploy Anything. Own Everything.",
     description:
       "Open source, self-hostable deployment platform with AI-powered builds and instant rollbacks.",
-    creator: "@openship",
-    site: "@openship",
+    creator: "@zyrix",
+    site: "@zyrix",
   },
   robots: {
     index: true,
@@ -126,21 +126,21 @@ const organizationLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: SITE_NAME,
-  legalName: "Oblien LLC",
+  legalName: "zyrix LLC",
   url: SITE_URL,
   logo: `${SITE_URL}/android-chrome-512x512.png`,
   description: DESCRIPTION,
   foundingDate: "2024",
   sameAs: [
-    "https://github.com/oblien/openship",
-    "https://x.com/openshipio",
-    "https://discord.gg/Q9eWNCeXjg",
+    "https://github.com/amirebog",
+    "https://x.com/",
+    "https://discord.gg/",
   ],
   contactPoint: [
     {
       "@type": "ContactPoint",
       contactType: "customer support",
-      email: "hello@openship.io",
+      email: "hello@zyrix.ir",
       availableLanguage: ["English", "Persian"],
     },
   ],
@@ -175,10 +175,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link
           rel="preconnect"
-          href="https://cdn.oblien.com"
+          href="https://cdn.zyrix.com"
           crossOrigin="anonymous"
         />
-        <link rel="dns-prefetch" href="https://cdn.oblien.com" />
+        <link rel="dns-prefetch" href="https://cdn.zyrix.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd) }}

