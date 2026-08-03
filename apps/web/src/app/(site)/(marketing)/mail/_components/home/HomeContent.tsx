@@ -111,7 +111,7 @@ export default function HomeContent() {
           className="border-input/50 mb-6 inline-flex items-center gap-2 rounded-full border border-[#2A2A2A] bg-[#1E1E1E] px-4 py-1"
         >
           <Link
-            href="https://github.com/oblien/openship"
+            href="https://github.com/"
             target="_blank"
             className="flex items-center gap-2 text-sm"
           >
@@ -128,7 +128,7 @@ export default function HomeContent() {
           className="mb-6 lg:hidden"
         >
           <Link href="/docs/install">
-            <Button>Install Openship</Button>
+            <Button>Install zyrix</Button>
           </Link>
         </motion.div>
       </section>

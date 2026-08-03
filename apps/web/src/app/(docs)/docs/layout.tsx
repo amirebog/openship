@@ -48,7 +48,7 @@ export default function DocsRootLayout({ children }: { children: ReactNode }) {
           ),
           url: "/",
         }}
-        githubUrl="https://github.com/oblien/openship"
+        githubUrl="https://github.com/amirebog/"
         links={[
           { text: "Changelog", url: "/changelog" },
           { text: "Resources", url: "/resources" },

@@ -4,19 +4,19 @@ import { ContactForm } from "@/components/contact-form";
 import { getLocaleFromCookies, getTranslations } from "@/i18n/server";
 
 export const metadata: Metadata = {
-  title: "Contact - Openship",
-  description: "Get in touch with the Openship team for support, security, or legal inquiries.",
+  title: "Contact - zyrix",
+  description: "Get in touch with the zyrix team for support, security, or legal inquiries.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: `Contact - Openship`,
-    description: "Get in touch with the Openship team for support, security, or legal inquiries.",
+    title: `Contact - zyrix`,
+    description: "Get in touch with the zyrix team for support, security, or legal inquiries.",
     url: "/contact",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `Contact - Openship`,
-    description: "Get in touch with the Openship team for support, security, or legal inquiries.",
+    title: `Contact - zyrix`,
+    description: "Get in touch with the zyrix team for support, security, or legal inquiries.",
   },
 };
 
@@ -46,31 +46,31 @@ export default async function ContactPage() {
                 <p className="legal-toc-title">{t.contactPage.tocTitle}</p>
                 <ol>
                   <li>
-                    <a href="mailto:support@oblien.com">
+                    <a href="mailto:amireb0047@gmail.com">
                       <span className="legal-toc-n">01</span>
                       {t.contactPage.support}
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/oblien/openship/issues" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/amirebog/openship/issues" target="_blank" rel="noreferrer">
                       <span className="legal-toc-n">02</span>
                       {t.contactPage.githubIssues}
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:security@oblien.com">
+                    <a href="mailto:amireb0047@gmail.com">
                       <span className="legal-toc-n">03</span>
                       {t.contactPage.security}
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:privacy@openship.io">
+                    <a href="mailto:amireb0047@gmail.com">
                       <span className="legal-toc-n">04</span>
                       {t.contactPage.privacy}
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:legal@openship.io">
+                    <a href="mailto:amireb0047@gmail.com">
                       <span className="legal-toc-n">05</span>
                       {t.contactPage.legal}
                     </a>

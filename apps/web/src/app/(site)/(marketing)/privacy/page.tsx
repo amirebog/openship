@@ -3,21 +3,21 @@ import { Navbar, Footer } from "@/components/landing";
 
 const PAGE_TITLE = "Privacy Policy";
 const PAGE_DESCRIPTION =
-  "How Openship handles your data. What we collect, why, where it lives, how to remove it. We do not sell personal data and we do not show ads.";
+  "How zyrix handles your data. What we collect, why, where it lives, how to remove it. We do not sell personal data and we do not show ads.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
   description: PAGE_DESCRIPTION,
   alternates: { canonical: "/privacy" },
   openGraph: {
-    title: `${PAGE_TITLE} - Openship`,
+    title: `${PAGE_TITLE} - zyrix`,
     description: PAGE_DESCRIPTION,
     url: "/privacy",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${PAGE_TITLE} - Openship`,
+    title: `${PAGE_TITLE} - zyrix`,
     description: PAGE_DESCRIPTION,
   },
 };
@@ -27,7 +27,7 @@ const SECTIONS = [
     id: "overview",
     title: "Overview",
     body: [
-      "Openship is a deployment platform. We host code, secrets, and infrastructure on your behalf when you use Openship Cloud. When you self-host, everything stays on your own machines and this policy applies only to the parts of our service you interact with (account, billing, support).",
+      "zyrix is a deployment platform. We host code, secrets, and infrastructure on your behalf when you use zyrix Cloud. When you self-host, everything stays on your own machines and this policy applies only to the parts of our service you interact with (account, billing, support).",
       "This policy describes what we collect, why, where it lives, and how to remove it. We do not sell personal data. We do not show ads.",
     ],
   },
@@ -108,7 +108,7 @@ export default function PrivacyPage() {
             <p className="legal-meta">
               Last updated <time dateTime="2026-05-18">May&nbsp;18, 2026</time>
               <span className="legal-meta-sep">·</span>
-              <a href="https://github.com/oblien/openship/commits/main/PRIVACY.md" className="legal-meta-link" target="_blank" rel="noreferrer">
+              <a href="https://github.com/" className="legal-meta-link" target="_blank" rel="noreferrer">
                 Version history on GitHub
               </a>
             </p>
@@ -150,7 +150,7 @@ export default function PrivacyPage() {
                 <footer className="legal-foot">
                   <p>
                     Questions or requests? Email{" "}
-                    <a href="mailto:privacy@openship.io">privacy@openship.io</a>.
+                    <a href="mailto:amireb0047@gmail.com">privacy@openship.io</a>.
                   </p>
                 </footer>
               </article>

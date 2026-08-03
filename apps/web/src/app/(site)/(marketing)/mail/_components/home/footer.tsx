@@ -44,7 +44,7 @@ export default function MailFooter() {
                 className="hidden flex-col items-center justify-start md:flex"
               >
                 <div className="justify-start text-center text-lg font-normal leading-7 text-white lg:text-2xl">
-                  Self-host Openship and run your own mail server in minutes.
+                  Self-host zyrix and run your own mail server in minutes.
                 </div>
               </motion.div>
               <motion.div
@@ -55,7 +55,7 @@ export default function MailFooter() {
               >
                 <Link href="/docs/install">
                   <Button className="h-8 bg-white text-black cursor-pointer">
-                    Install Openship
+                    Install zyrix
                   </Button>
                 </Link>
               </motion.div>

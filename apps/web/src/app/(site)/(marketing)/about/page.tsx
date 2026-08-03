@@ -3,19 +3,19 @@ import { Navbar, Footer } from "@/components/landing";
 import { getLocaleFromCookies, getTranslations } from "@/i18n/server";
 
 export const metadata: Metadata = {
-  title: "About - Openship",
-  description: "Open source, self-hostable deployment platform. Learn the philosophy and technology behind Openship.",
+  title: "About - zyrix",
+  description: "Open source, self-hostable deployment platform. Learn the philosophy and technology behind zyrix.",
   alternates: { canonical: "/about" },
   openGraph: {
-    title: `About - Openship`,
-    description: "Open source, self-hostable deployment platform. Learn the philosophy and technology behind Openship.",
+    title: `About - zyrix`,
+    description: "Open source, self-hostable deployment platform. Learn the philosophy and technology behind zyrix.",
     url: "/about",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `About - Openship`,
-    description: "Open source, self-hostable deployment platform. Learn the philosophy and technology behind Openship.",
+    title: `About - zyrix`,
+    description: "Open source, self-hostable deployment platform. Learn the philosophy and technology behind zyrix.",
   },
 };
 
